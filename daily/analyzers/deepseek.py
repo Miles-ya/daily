@@ -15,12 +15,13 @@ from daily.models import EconomicEvent
 
 
 class DeepSeekAnalyzer(AnalyzerProvider):
-    endpoint = "https://api.deepseek.com/chat/completions"
+    default_endpoint = "https://api.deepseek.com/chat/completions"
 
     def __init__(self, cache_dir: Path, api_key: str | None = None, model: str | None = None,
                  schema_path: Path | None = None, retries: int = 2):
         self.api_key = api_key or os.getenv("DEEPSEEK_API_KEY")
         self.model = model or os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+        self.endpoint = os.getenv("DEEPSEEK_BASE_URL", self.default_endpoint).rstrip("/")
         self.cache_dir = cache_dir
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         schema_path = schema_path or Path(__file__).parents[1] / "schemas" / "analysis-v1.json"
@@ -36,26 +37,59 @@ class DeepSeekAnalyzer(AnalyzerProvider):
         if not self.enabled:
             return {}
         source = json.dumps({"event": event.to_dict(), "documents": documents}, ensure_ascii=False, sort_keys=True)
-        cache_key = hashlib.sha256((self.model + source).encode()).hexdigest()
+        cache_key = hashlib.sha256((self.model + self.schema.get("$id", "") + source).encode()).hexdigest()
         cache_path = self.cache_dir / f"{cache_key}.json"
         if cache_path.exists():
             return json.loads(cache_path.read_text(encoding="utf-8"))["analysis"]
         payload = {
             "model": self.model,
-            "response_format": {"type": "json_object"},
-            "messages": [{"role": "system", "content": SYSTEM_PROMPT}, {"role": "user", "content": source[:60000]}],
+            "messages": [
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": json.dumps({"output_schema": self.schema, "input": json.loads(source)}, ensure_ascii=False)[:60000]},
+            ],
             "temperature": 0.1,
+            "max_tokens": 8000,
+            "stream": True,
         }
         last_error: Exception | None = None
         for attempt in range(self.retries + 1):
             started = time.monotonic()
             try:
-                response = requests.post(self.endpoint, headers={"Authorization": f"Bearer {self.api_key}"}, json=payload, timeout=90)
+                response = requests.post(self.endpoint, headers={"Authorization": f"Bearer {self.api_key}"}, json=payload, stream=True, timeout=(15, 90))
                 response.raise_for_status()
-                body = response.json()
-                analysis = json.loads(body["choices"][0]["message"]["content"])
+                fragments: list[str] = []
+                usage: dict = {}
+                finish_reason: str | None = None
+                chunk_buffer = b""
+                for raw_line in response.iter_lines(decode_unicode=False):
+                    if not raw_line:
+                        continue
+                    data = raw_line[5:].strip() if raw_line.startswith(b"data:") else raw_line.strip()
+                    if data == b"[DONE]":
+                        break
+                    chunk_buffer += data
+                    try:
+                        chunk = json.loads(chunk_buffer.decode("utf-8"))
+                    except (UnicodeDecodeError, json.JSONDecodeError):
+                        # Some compatible gateways split one SSE JSON event over
+                        # physical lines without repeating the `data:` prefix.
+                        continue
+                    chunk_buffer = b""
+                    usage = chunk.get("usage") or usage
+                    choice = chunk.get("choices", [{}])[0]
+                    finish_reason = choice.get("finish_reason") or finish_reason
+                    delta = choice.get("delta", {})
+                    if delta.get("content"):
+                        fragments.append(delta["content"])
+                if chunk_buffer:
+                    raise ValueError("AI stream ended with an incomplete SSE event")
+                raw_analysis = "".join(fragments).strip()
+                if raw_analysis.startswith("```json") and raw_analysis.endswith("```"):
+                    raw_analysis = raw_analysis[7:-3].strip()
+                analysis = json.loads(raw_analysis)
                 jsonschema.validate(analysis, self.schema)
-                self.last_usage = {**body.get("usage", {}), "duration_seconds": round(time.monotonic() - started, 3), "model": self.model}
+                self.last_usage = {**usage, "duration_seconds": round(time.monotonic() - started, 3), "model": self.model,
+                                   "finish_reason": finish_reason}
                 cache_path.write_text(json.dumps({"analysis": analysis, "usage": self.last_usage}, ensure_ascii=False, indent=2), encoding="utf-8")
                 return analysis
             except (requests.RequestException, KeyError, ValueError, jsonschema.ValidationError) as exc:

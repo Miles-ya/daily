@@ -12,6 +12,7 @@ Daily 是一个 AI 驱动的公开信息情报流。V1 聚焦中国经济，只�
 - 工业、消费、投资、民间投资、房地产、就业、CPI、PPI、外贸、服务业和能源指标提取
 - 本地历史序列、变化方向、透明经济评分、精选和热点
 - DeepSeek 结构化分析、JSON Schema 校验、失败重试、哈希缓存与无密钥降级
+- 兼容 `api.b.ai` 的流式 SSE 响应，在服务端完整组装 JSON 后再校验和缓存
 - 精选、全部动态、热点、日报、指标、详情、关于和前端本地搜索
 - GitHub Actions 每日自动更新和 GitHub Pages 独立部署
 
@@ -44,7 +45,8 @@ SITE_BASE_URL=/ .venv/bin/daily pipeline --no-ai --max-documents 10
 复制 `.env.example` 中需要的值到本地环境，或在 GitHub 仓库 Settings → Secrets and variables → Actions 配置：
 
 - `DEEPSEEK_API_KEY`：可选；缺失时仅跳过 AI，抓取和网站仍工作。
-- `DEEPSEEK_MODEL`：推荐设置为仓库 Variable，默认 `deepseek-chat`。
+- `DEEPSEEK_BASE_URL`：OpenAI 兼容的完整 Chat Completions 地址，当前使用 `https://api.b.ai/v1/chat/completions`。
+- `DEEPSEEK_MODEL`：推荐设置为仓库 Variable，当前使用 `deepseek-v4-flash`。
 - `SITE_BASE_URL`：Pages 固定为 `/daily/`，本地预览可设为 `/`。
 
 Telegram 的 `TELEGRAM_BOT_TOKEN`、`TELEGRAM_CHAT_ID` 和 `ENABLE_TELEGRAM` 已预留，但 V1 不发送消息。任何密钥都不得提交到 Git、生成数据或前端。

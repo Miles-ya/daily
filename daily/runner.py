@@ -79,6 +79,11 @@ def run_pipeline(root: Path, run_date: str | None = None, online: bool = True, e
             unique_metrics[identity] = metric
     all_metrics = sorted(unique_metrics.values(), key=lambda m: (m["period"], m["key"], m["source_document"]))
 
+    existing_events = {
+        value["id"]: value
+        for path in (root / "data/events").glob("*.json")
+        if (value := json.loads(path.read_text(encoding="utf-8")))
+    }
     events = aggregate_events(all_documents)
     event_by_document = {document_id: event for event in events for document_id in event.documents}
     # Event details keep the metric extracted from that event's own documents,
@@ -96,9 +101,12 @@ def run_pipeline(root: Path, run_date: str | None = None, online: bool = True, e
     usage: list[dict] = []
     docs_dict = {document.id: document.to_dict() for document in all_documents}
     for event in events:
+        event.analysis = existing_events.get(event.id, {}).get("analysis", {})
         try:
             if enable_ai:
-                event.analysis = analyzer.analyze(event, [docs_dict[doc_id] for doc_id in event.documents])
+                updated_analysis = analyzer.analyze(event, [docs_dict[doc_id] for doc_id in event.documents])
+                if updated_analysis:
+                    event.analysis = updated_analysis
                 if analyzer.last_usage:
                     usage.append({"event_id": event.id, **analyzer.last_usage})
         except Exception as exc:
