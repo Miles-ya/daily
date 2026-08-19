@@ -101,10 +101,14 @@ def run_pipeline(root: Path, run_date: str | None = None, online: bool = True, e
     usage: list[dict] = []
     docs_dict = {document.id: document.to_dict() for document in all_documents}
     for event in events:
-        event.analysis = existing_events.get(event.id, {}).get("analysis", {})
+        previous_event = existing_events.get(event.id, {})
+        event.analysis = previous_event.get("analysis", {})
+        event_documents = [docs_dict[doc_id] for doc_id in event.documents]
+        if event.analysis and previous_event.get("documents") == event.documents:
+            analyzer.prime_cache(event, event_documents, event.analysis)
         try:
             if enable_ai:
-                updated_analysis = analyzer.analyze(event, [docs_dict[doc_id] for doc_id in event.documents])
+                updated_analysis = analyzer.analyze(event, event_documents)
                 if updated_analysis:
                     event.analysis = updated_analysis
                 if analyzer.last_usage:

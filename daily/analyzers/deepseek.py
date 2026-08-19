@@ -33,12 +33,32 @@ class DeepSeekAnalyzer(AnalyzerProvider):
     def enabled(self) -> bool:
         return bool(self.api_key)
 
+    def _cache_path(self, event: EconomicEvent, documents: list[dict]) -> Path:
+        identity = {
+            "model": self.model,
+            "schema": self.schema.get("$id", ""),
+            "event_id": event.id,
+            "documents": sorted((document.get("id", ""), document.get("content_hash", "")) for document in documents),
+        }
+        key = hashlib.sha256(json.dumps(identity, sort_keys=True).encode()).hexdigest()
+        return self.cache_dir / f"{key}.json"
+
+    def prime_cache(self, event: EconomicEvent, documents: list[dict], analysis: dict) -> None:
+        if not analysis:
+            return
+        jsonschema.validate(analysis, self.schema)
+        path = self._cache_path(event, documents)
+        if not path.exists():
+            path.write_text(json.dumps({"analysis": analysis, "usage": {"migrated": True, "model": self.model}}, ensure_ascii=False, indent=2), encoding="utf-8")
+
     def analyze(self, event: EconomicEvent, documents: list[dict]) -> dict:
         if not self.enabled:
             return {}
-        source = json.dumps({"event": event.to_dict(), "documents": documents}, ensure_ascii=False, sort_keys=True)
-        cache_key = hashlib.sha256((self.model + self.schema.get("$id", "") + source).encode()).hexdigest()
-        cache_path = self.cache_dir / f"{cache_key}.json"
+        event_input = event.to_dict()
+        # AI output must never become part of its own next cache key/input.
+        event_input["analysis"] = {}
+        source = json.dumps({"event": event_input, "documents": documents}, ensure_ascii=False, sort_keys=True)
+        cache_path = self._cache_path(event, documents)
         if cache_path.exists():
             return json.loads(cache_path.read_text(encoding="utf-8"))["analysis"]
         payload = {
