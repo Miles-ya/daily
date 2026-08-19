@@ -104,7 +104,7 @@ def run_pipeline(root: Path, run_date: str | None = None, online: bool = True, e
         previous_event = existing_events.get(event.id, {})
         event.analysis = previous_event.get("analysis", {})
         event_documents = [docs_dict[doc_id] for doc_id in event.documents]
-        if event.analysis and previous_event.get("documents") == event.documents:
+        if enable_ai and analyzer.enabled and event.analysis and previous_event.get("documents") == event.documents:
             analyzer.prime_cache(event, event_documents, event.analysis)
         try:
             if enable_ai:

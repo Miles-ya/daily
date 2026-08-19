@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Daily：中国经济公开信息情报流">
+  <meta name="description" content="Daily：中国经济的每日记录">
   <title>{{ title }} · Daily</title>
   <link rel="icon" href="{{ asset('assets/favicon.svg') }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ asset('assets/style.css') }}">
@@ -11,21 +11,20 @@
   <script defer src="{{ asset('assets/app.js') }}"></script>
 </head>
 <body>
-  <aside class="sidebar">
-    <a class="brand" href="{{ base_url }}">DAILY <small>Economy</small></a>
-    <div class="nav-label">内容</div>
-    <nav>
-      <a href="{{ base_url }}">⚡ 精选</a><a href="{{ asset('all/') }}">☷ 全部经济动态</a>
-      <a href="{{ asset('hot/') }}">♨ 热点榜</a><a href="{{ asset('daily/') }}">▤ 经济日报</a>
-    </nav>
-    <div class="nav-label">数据</div>
-    <nav><a href="{{ asset('metrics/') }}">▥ 数据指标</a></nav>
-    <div class="nav-label">更多</div>
-    <nav><a href="{{ asset('about/') }}">⚙ 关于</a></nav>
-  </aside>
-  <header class="mobile-header"><a class="brand" href="{{ base_url }}">DAILY</a><button id="menuButton">菜单</button></header>
-  <main>
-    {% block content %}{% endblock %}
-  </main>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <a class="wordmark" href="{{ base_url }}">DAILY</a>
+      <nav class="primary-nav" aria-label="主要导航">
+        <a href="{{ base_url }}">ECONOMY</a><a href="{{ asset('archive/') }}">ARCHIVE</a><a href="{{ asset('about/') }}">ABOUT</a>
+        <button class="search-toggle" type="button" aria-expanded="false" aria-controls="siteSearch">SEARCH</button>
+      </nav>
+    </div>
+    <div class="site-search" id="siteSearch" hidden>
+      <label for="searchInput">SEARCH THE ARCHIVE</label><input id="searchInput" type="search" placeholder="标题、来源、标签" autocomplete="off">
+      <div id="searchResults" class="search-results" aria-live="polite"></div>
+    </div>
+  </header>
+  <main>{% block content %}{% endblock %}</main>
+  <footer class="site-footer"><span>DAILY / ECONOMY</span><span>公开资料 · 结构化记录 · AI 辅助分析</span></footer>
 </body>
 </html>

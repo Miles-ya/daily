@@ -57,4 +57,9 @@ def test_base_path_build(tmp_path):
     assert 'href="/daily/assets/style.css"' in html
     assert 'href="/assets/' not in html
     assert (output / "events/e/index.html").exists()
+    assert (output / "archive/index.html").exists()
+    assert 'id="date-2026-08-19"' in html
+    assert 'id="date-2026-08-17"' in html
+    assert "DAILY BRIEF" in html
+    assert "sidebar" not in html
     assert normalize_base_url("daily") == "/daily/"

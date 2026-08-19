@@ -1,15 +1,27 @@
 {% extends "base.html" %}{% block content %}
-<section class="page-head"><div><h1>{{ title }}</h1><p>{{ events[0].date if events else '' }} · AI 筛选的中国经济重点</p></div>
-<label class="search"><span>搜索</span><input id="searchInput" placeholder="标题、来源、标签"></label></section>
-<div id="searchResults" class="search-results"></div>
-<div class="filters"><button class="active">全部</button>{% for tag in ['宏观','工业','消费','投资','房地产','就业','外贸','产业'] %}<button>{{ tag }}</button>{% endfor %}</div>
-{% if not events %}<div class="empty">今日暂无重大经济数据或政策更新。</div>{% endif %}
-{% for event in events %}<article class="card" data-tags="{{ event.tags|join(' ') }}">
-  <div class="eyebrow">国家统计局 · {{ event.tags|join(' · ') or '经济动态' }}{% if event.featured %}<b>精选</b>{% endif %}</div>
-  <h2><a href="{{ asset('events/' ~ event.id ~ '/') }}">{{ event.title }}</a></h2>
-  <p class="summary">{{ event.analysis.one_sentence if event.analysis else event.recommendation_reason }}</p>
-  {% if event.analysis %}<div class="ai"><strong>AI 观察</strong>{{ event.analysis.overall_judgement }}</div>{% endif %}
-  <p><strong>推荐理由：</strong>{{ event.analysis.recommendation_reason if event.analysis else event.recommendation_reason }}</p>
-  <footer><span class="score">经济评分 <b>{{ event.score }}</b>/100</span><span>{{ event.documents|length }} 个关联官方来源</span><a href="{{ asset('events/' ~ event.id ~ '/') }}">查看详情 →</a></footer>
-</article>{% endfor %}
+<header class="publication-intro"><p class="kicker">DAILY / ECONOMY</p><h1>中国经济的每日记录</h1><p class="updated">UPDATED {{ updated }}</p></header>
+{% if not timeline %}<p class="empty-state">今日暂无重大经济数据或政策更新。</p>{% endif %}
+<div class="timeline">
+{% for section in timeline %}
+  {% if loop.first or section.year != timeline[loop.index0 - 1].year %}<div class="year-marker">{{ section.year }}</div>{% endif %}
+  {% if loop.first or section.month != timeline[loop.index0 - 1].month %}<div class="month-marker">{{ section.month }}</div>{% endif %}
+  <section class="date-section" id="date-{{ section.iso }}">
+    <header class="date-heading"><div class="date-number">{{ section.day }}</div><div class="date-meta"><span>{{ section.weekday }}</span><time datetime="{{ section.iso }}">{{ section.month_short }} {{ section.year }}</time></div></header>
+    <div class="day-content">
+      {% if section.digest %}<div class="daily-brief"><div class="section-label">DAILY BRIEF</div><p>{{ section.digest.one_sentence }}</p></div>{% endif %}
+      <div class="day-count">{{ section.events|length }} UPDATES{% if section.selected_count %} · {{ section.selected_count }} SELECTED{% endif %}</div>
+      {% if not section.events %}<p class="quiet-note">本日暂无新增事件记录。</p>{% endif %}
+      {% for event in section.events %}<article class="event-entry" data-tags="{{ event.tags|join(' ') }}">
+        <div class="entry-index">{{ "%02d"|format(loop.index) }}</div><div class="entry-score">{{ event.score }}</div>
+        <div class="entry-body"><div class="entry-meta">NBS / {{ event.tags|join(' / ')|upper if event.tags else event.event_type|upper }}{% if event.featured %} / SELECTED{% endif %}</div>
+          <h2><a href="{{ asset('events/' ~ event.id ~ '/') }}">{{ event.title }}</a></h2>
+          <p class="entry-summary">{{ event.analysis.one_sentence if event.analysis else event.recommendation_reason }}</p>
+          {% if event.analysis and event.analysis.overall_judgement %}<div class="ai-note"><span>AI NOTE</span><p>{{ event.analysis.overall_judgement }}</p></div>{% endif %}
+          <div class="entry-links"><a href="{{ asset('events/' ~ event.id ~ '/') }}">研究记录 →</a>{% set doc=documents[event.primary_document] %}{% if doc %}<a href="{{ doc.url }}" target="_blank" rel="noopener">原文 ↗</a>{% endif %}</div>
+        </div>
+      </article>{% endfor %}
+    </div>
+  </section>
+{% endfor %}
+</div>
 {% endblock %}
