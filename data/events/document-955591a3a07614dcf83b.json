@@ -1,0 +1,47 @@
+{
+  "analysis": {},
+  "channel": "economy",
+  "date": "2026-08-17",
+  "documents": [
+    "955591a3a07614dcf83b"
+  ],
+  "event_type": "economic_data",
+  "featured": false,
+  "id": "document-955591a3a07614dcf83b",
+  "metrics": [
+    {
+      "change": null,
+      "channel": "economy",
+      "direction": "unknown",
+      "event_id": "document-955591a3a07614dcf83b",
+      "id": "3bc4cc5168cbe6cf5c9c",
+      "key": "fixed_asset_investment",
+      "mom": null,
+      "name": "投资",
+      "period": "2026-07",
+      "previous_value": null,
+      "source_document": "955591a3a07614dcf83b",
+      "source_text": "固定资产投资（不含农户） 260328 亿元，同比下降 6.7% （按可比口径计算，详见附注 7 ）。其中，知识产权产品投资同比增长 9.1% 。 分产业看，第一产业投资 5329 亿元，同比下降 0.5% ；第二产业投资 97709 亿元，下降 2.1% ；第三产业投资 157290 亿元，下降 9.5% 。 工业投",
+      "unit": "%",
+      "value": -6.7,
+      "yoy": -6.7,
+      "ytd": null
+    }
+  ],
+  "official_interpretation": [],
+  "primary_document": "955591a3a07614dcf83b",
+  "recommendation_reason": "该信息对观察当前经济运行具有参考价值。",
+  "score": 31,
+  "score_breakdown": {
+    "capital_impact": 2,
+    "data_policy_importance": 7,
+    "economic_scale": 8,
+    "industry_impact": 2,
+    "macro_impact": 12,
+    "trend_change": 0
+  },
+  "tags": [
+    "经济数据"
+  ],
+  "title": "2026年1—7月份全国固定资产投资基本情况"
+}

@@ -1,0 +1,47 @@
+{
+  "analysis": {},
+  "channel": "economy",
+  "date": "2026-08-17",
+  "documents": [
+    "964b732544529efdd8ea"
+  ],
+  "event_type": "economic_data",
+  "featured": false,
+  "id": "document-964b732544529efdd8ea",
+  "metrics": [
+    {
+      "change": null,
+      "channel": "economy",
+      "direction": "unknown",
+      "event_id": "document-964b732544529efdd8ea",
+      "id": "316872d2ab7868480c11",
+      "key": "real_estate",
+      "mom": null,
+      "name": "房地产",
+      "period": "2026-07",
+      "previous_value": null,
+      "source_document": "964b732544529efdd8ea",
+      "source_text": "房地产开发投资完成情况 1 — 7 月份，全国房地产开发投资 43009 亿元，同比下降 19.2% （按可比口径计算，详见附注 5 ）；其中，住宅投资 33172 亿元，下降 19.1% 。 1 — 7 月份，房地产开发企业房屋施工面积 557572 万平方米，同比下降 12.7% 。其中，住宅施工面积 387051",
+      "unit": "%",
+      "value": -19.2,
+      "yoy": -19.2,
+      "ytd": null
+    }
+  ],
+  "official_interpretation": [],
+  "primary_document": "964b732544529efdd8ea",
+  "recommendation_reason": "该信息对观察当前经济运行具有参考价值。",
+  "score": 31,
+  "score_breakdown": {
+    "capital_impact": 2,
+    "data_policy_importance": 7,
+    "economic_scale": 8,
+    "industry_impact": 2,
+    "macro_impact": 12,
+    "trend_change": 0
+  },
+  "tags": [
+    "经济数据"
+  ],
+  "title": "2026年1—7月份全国房地产市场基本情况"
+}

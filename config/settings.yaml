@@ -1,0 +1,9 @@
+site:
+  title: Daily
+  base_url: /daily/
+pipeline:
+  request_timeout: 25
+  request_retries: 3
+  user_agent: DailyIntelligence/0.1 (+https://github.com/Miles-ya/daily)
+  featured_score: 65
+  breaking_score: 90

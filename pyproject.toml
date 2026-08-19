@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daily-intelligence"
+version = "0.1.0"
+description = "AI-driven public information intelligence feed"
+requires-python = ">=3.12"
+dependencies = [
+  "beautifulsoup4>=4.12,<5",
+  "Jinja2>=3.1,<4",
+  "jsonschema>=4.23,<5",
+  "PyYAML>=6,<7",
+  "requests>=2.32,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+daily = "daily.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["daily*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

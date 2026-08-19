@@ -1,0 +1,22 @@
+{
+  "biggest_change": "等待更多历史数据形成稳定比较。",
+  "channel": "economy",
+  "date": "2026-08-19",
+  "important_events": [
+    {
+      "id": "china-economy-2026-07",
+      "score": 77,
+      "summary": "",
+      "title": "2026年7月中国经济运行数据"
+    }
+  ],
+  "industry_signals": [],
+  "money_flow": {
+    "confirmed": [],
+    "inferred": []
+  },
+  "one_sentence": "今日重点关注：2026年7月中国经济运行数据。",
+  "risks": [],
+  "temperature": null,
+  "watch_next": []
+}

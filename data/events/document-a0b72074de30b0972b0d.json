@@ -1,0 +1,28 @@
+{
+  "analysis": {},
+  "channel": "economy",
+  "date": "2026-08-17",
+  "documents": [
+    "a0b72074de30b0972b0d"
+  ],
+  "event_type": "economic_data",
+  "featured": false,
+  "id": "document-a0b72074de30b0972b0d",
+  "metrics": [],
+  "official_interpretation": [],
+  "primary_document": "a0b72074de30b0972b0d",
+  "recommendation_reason": "该信息对观察当前经济运行具有参考价值。",
+  "score": 27,
+  "score_breakdown": {
+    "capital_impact": 0,
+    "data_policy_importance": 7,
+    "economic_scale": 6,
+    "industry_impact": 2,
+    "macro_impact": 12,
+    "trend_change": 0
+  },
+  "tags": [
+    "经济数据"
+  ],
+  "title": "2026年7月份能源生产情况"
+}

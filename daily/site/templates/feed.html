@@ -1,0 +1,15 @@
+{% extends "base.html" %}{% block content %}
+<section class="page-head"><div><h1>{{ title }}</h1><p>{{ events[0].date if events else '' }} · AI 筛选的中国经济重点</p></div>
+<label class="search"><span>搜索</span><input id="searchInput" placeholder="标题、来源、标签"></label></section>
+<div id="searchResults" class="search-results"></div>
+<div class="filters"><button class="active">全部</button>{% for tag in ['宏观','工业','消费','投资','房地产','就业','外贸','产业'] %}<button>{{ tag }}</button>{% endfor %}</div>
+{% if not events %}<div class="empty">今日暂无重大经济数据或政策更新。</div>{% endif %}
+{% for event in events %}<article class="card" data-tags="{{ event.tags|join(' ') }}">
+  <div class="eyebrow">国家统计局 · {{ event.tags|join(' · ') or '经济动态' }}{% if event.featured %}<b>精选</b>{% endif %}</div>
+  <h2><a href="{{ asset('events/' ~ event.id ~ '/') }}">{{ event.title }}</a></h2>
+  <p class="summary">{{ event.analysis.one_sentence if event.analysis else event.recommendation_reason }}</p>
+  {% if event.analysis %}<div class="ai"><strong>AI 观察</strong>{{ event.analysis.overall_judgement }}</div>{% endif %}
+  <p><strong>推荐理由：</strong>{{ event.analysis.recommendation_reason if event.analysis else event.recommendation_reason }}</p>
+  <footer><span class="score">经济评分 <b>{{ event.score }}</b>/100</span><span>{{ event.documents|length }} 个关联官方来源</span><a href="{{ asset('events/' ~ event.id ~ '/') }}">查看详情 →</a></footer>
+</article>{% endfor %}
+{% endblock %}

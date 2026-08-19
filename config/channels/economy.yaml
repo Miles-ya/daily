@@ -1,0 +1,11 @@
+id: economy
+name: 中国经济
+document_types:
+  - macro_overview
+  - economic_data
+  - economic_policy
+  - official_interpretation
+  - press_conference
+  - industry_data
+  - ordinary_document
+categories: [宏观, 工业, 消费, 投资, 房地产, 财政, 货币, 就业, 外贸, 产业]

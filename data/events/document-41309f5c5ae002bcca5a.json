@@ -1,0 +1,47 @@
+{
+  "analysis": {},
+  "channel": "economy",
+  "date": "2026-08-17",
+  "documents": [
+    "41309f5c5ae002bcca5a"
+  ],
+  "event_type": "economic_data",
+  "featured": false,
+  "id": "document-41309f5c5ae002bcca5a",
+  "metrics": [
+    {
+      "change": null,
+      "channel": "economy",
+      "direction": "unknown",
+      "event_id": "document-41309f5c5ae002bcca5a",
+      "id": "f690a882128b52ec4c31",
+      "key": "industrial_production",
+      "mom": null,
+      "name": "工业",
+      "period": "2026-07",
+      "previous_value": null,
+      "source_document": "41309f5c5ae002bcca5a",
+      "source_text": "规模以上工业增加值同比实际增长 4.5% （增加值增速均为扣除价格因素的实际增长率）。从环比看， 7 月份，规模以上工业增加值比上月增长 0.11% 。 1 — 7 月份，规模以上工业增加值同比增长 5.3% 。 分三大门类看， 7 月份，采矿业增加值同比下降 4.2% ，制造业增长 5.5% ，电力、热力、燃气及水生",
+      "unit": "%",
+      "value": 4.5,
+      "yoy": 4.5,
+      "ytd": null
+    }
+  ],
+  "official_interpretation": [],
+  "primary_document": "41309f5c5ae002bcca5a",
+  "recommendation_reason": "该信息对观察当前经济运行具有参考价值。",
+  "score": 29,
+  "score_breakdown": {
+    "capital_impact": 0,
+    "data_policy_importance": 7,
+    "economic_scale": 8,
+    "industry_impact": 2,
+    "macro_impact": 12,
+    "trend_change": 0
+  },
+  "tags": [
+    "经济数据"
+  ],
+  "title": "2026年7月份规模以上工业增加值增长4.5%"
+}

@@ -1,0 +1,9 @@
+sources:
+  stats_gov:
+    name: 国家统计局
+    channel: economy
+    list_urls:
+      - https://www.stats.gov.cn/sj/zxfb/
+      - https://www.stats.gov.cn/sj/sjjd/
+      - https://www.stats.gov.cn/sj/zxfbhjd/
+    max_documents: 30

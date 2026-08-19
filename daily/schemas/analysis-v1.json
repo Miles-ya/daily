@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "analysis-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["one_sentence", "overall_judgement", "economic_temperature", "key_metrics", "strong_signals", "weak_signals", "turning_points", "divergences", "money_flow", "industry_signals", "risks", "watch_next", "recommendation_reason", "confidence"],
+  "properties": {
+    "one_sentence": {"type": "string"},
+    "overall_judgement": {"type": "string"},
+    "economic_temperature": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+    "key_metrics": {"type": "array", "items": {"type": "string"}},
+    "strong_signals": {"type": "array", "items": {"type": "string"}},
+    "weak_signals": {"type": "array", "items": {"type": "string"}},
+    "turning_points": {"type": "array", "items": {"type": "string"}},
+    "divergences": {"type": "array", "items": {"type": "string"}},
+    "money_flow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["confirmed", "inferred"],
+      "properties": {
+        "confirmed": {"type": "array", "items": {"type": "string"}},
+        "inferred": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "industry_signals": {"type": "array", "items": {"type": "string"}},
+    "risks": {"type": "array", "items": {"type": "string"}},
+    "watch_next": {"type": "array", "items": {"type": "string"}},
+    "recommendation_reason": {"type": "string"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  }
+}
