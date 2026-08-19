@@ -1,0 +1,47 @@
+{
+  "analysis": {},
+  "channel": "economy",
+  "date": "2026-08-09",
+  "documents": [
+    "b40e67aa8c8e77d379e0"
+  ],
+  "event_type": "economic_data",
+  "featured": false,
+  "id": "document-b40e67aa8c8e77d379e0",
+  "metrics": [
+    {
+      "change": null,
+      "channel": "economy",
+      "direction": "unknown",
+      "event_id": "document-b40e67aa8c8e77d379e0",
+      "id": "410f933432ca2f820045",
+      "key": "cpi",
+      "mom": null,
+      "name": "CPI",
+      "period": "2026-07",
+      "previous_value": null,
+      "source_document": "b40e67aa8c8e77d379e0",
+      "source_text": "居民消费价格同比上涨 0.5% 。其中，城市上涨 0.5% ，农村上涨 0.4% ；食品价格下降 1.5% ，非食品价格上涨 0.9% ；消费品价格上涨 0.2% ，服务价格上涨 0.7% 。 1 ­ ­ — 7 月平均，全国居民消费价格比上年同期上涨 0.9% 。 7 月份，全国居民消费价格环比下降 0.1% 。其中",
+      "unit": "%",
+      "value": 0.5,
+      "yoy": 0.5,
+      "ytd": null
+    }
+  ],
+  "official_interpretation": [],
+  "primary_document": "b40e67aa8c8e77d379e0",
+  "recommendation_reason": "该信息对观察当前经济运行具有参考价值。",
+  "score": 29,
+  "score_breakdown": {
+    "capital_impact": 0,
+    "data_policy_importance": 7,
+    "economic_scale": 8,
+    "industry_impact": 2,
+    "macro_impact": 12,
+    "trend_change": 0
+  },
+  "tags": [
+    "经济数据"
+  ],
+  "title": "2026年7月份居民消费价格同比上涨0.5%"
+}

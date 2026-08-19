@@ -1,0 +1,47 @@
+{
+  "analysis": {},
+  "channel": "economy",
+  "date": "2026-08-09",
+  "documents": [
+    "e698632b3b2ca2e3fa7f"
+  ],
+  "event_type": "economic_data",
+  "featured": false,
+  "id": "document-e698632b3b2ca2e3fa7f",
+  "metrics": [
+    {
+      "change": null,
+      "channel": "economy",
+      "direction": "unknown",
+      "event_id": "document-e698632b3b2ca2e3fa7f",
+      "id": "6a469d802c55f02f40a8",
+      "key": "ppi",
+      "mom": null,
+      "name": "PPI",
+      "period": "2026-07",
+      "previous_value": null,
+      "source_document": "e698632b3b2ca2e3fa7f",
+      "source_text": "工业生产者出厂价格同比上涨 3.5% ，环比下降 0.7% 。工业生产者购进价格同比上涨 5.5% ，环比下降 1.0% 。 1 — 7 月平均，工业生产者出厂价格比上年同期上涨 1.8% ，工业生产者购进价格上涨 2.8% 。 一、工业生产者价格同比变动情况 7 月份，工业生产者出厂价格中，生产资料价格同比上涨 4.",
+      "unit": "%",
+      "value": 3.5,
+      "yoy": 3.5,
+      "ytd": null
+    }
+  ],
+  "official_interpretation": [],
+  "primary_document": "e698632b3b2ca2e3fa7f",
+  "recommendation_reason": "该信息对观察当前经济运行具有参考价值。",
+  "score": 29,
+  "score_breakdown": {
+    "capital_impact": 0,
+    "data_policy_importance": 7,
+    "economic_scale": 8,
+    "industry_impact": 2,
+    "macro_impact": 12,
+    "trend_change": 0
+  },
+  "tags": [
+    "经济数据"
+  ],
+  "title": "2026年7月份工业生产者出厂价格同比上涨3.5%"
+}
