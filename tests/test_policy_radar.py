@@ -1,10 +1,11 @@
 import json
+from datetime import date
 from pathlib import Path
 
 from daily.collectors.base import DiscoveredItem
 from daily.collectors.policy import GenericPolicyCollector
 from daily.models import PolicyDocument
-from daily.notifications.policy import _chunks
+from daily.notifications.policy import _chunks, _is_recent
 from daily.pipeline.policy import classify_status, detect_topics, is_policy_candidate, score_policy
 from daily.site.policy_builder import build_policy_site
 
@@ -50,6 +51,13 @@ def test_telegram_batches_stay_within_limit():
     batches = list(_chunks([meta, meta]))
     assert len(batches) == 2
     assert all(len(message) <= 3900 for message, _ in batches)
+
+
+def test_telegram_only_sends_recent_policies():
+    today = date(2026, 8, 20)
+    assert _is_recent({"publish_date": "2026-08-18"}, today)
+    assert not _is_recent({"publish_date": "2026-08-16"}, today)
+    assert not _is_recent({"publish_date": ""}, today)
 
 
 def test_generic_policy_collector(monkeypatch):

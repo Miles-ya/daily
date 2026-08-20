@@ -5,7 +5,9 @@ import html
 import json
 import os
 import tempfile
+from datetime import date, datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from daily.analyzers import DeepSeekAnalyzer
 from daily.analyzers.policy_prompt import PERSONAL_SYSTEM_PROMPT
@@ -90,6 +92,14 @@ def _chunks(items: list[tuple[tuple[str, dict, dict], str]], limit: int = 3900):
         yield header + "\n\n——\n\n".join(text for _, text in current), [meta for meta, _ in current]
 
 
+def _is_recent(policy: dict, today: date, max_age_days: int = 3) -> bool:
+    try:
+        published = date.fromisoformat(policy.get("publish_date") or "")
+    except ValueError:
+        return False
+    return today - timedelta(days=max_age_days) <= published <= today
+
+
 def notify_policies(root: Path, policy_ids: list[str], site_url: str) -> dict:
     provider = TelegramNotification()
     if not provider.enabled:
@@ -100,6 +110,7 @@ def notify_policies(root: Path, policy_ids: list[str], site_url: str) -> dict:
         profile = {}
     policies, assessments = load_policy_data(root)
     policies_by_id = {item["id"]: item for item in policies}
+    today = datetime.now(ZoneInfo("Asia/Shanghai")).date()
     storage = Storage(root / "data")
     ledger = storage.read_json("notifications", "telegram.json", default={"sent": {}})
     candidates = []
@@ -107,6 +118,8 @@ def notify_policies(root: Path, policy_ids: list[str], site_url: str) -> dict:
         policy = policies_by_id.get(policy_id)
         assessment = assessments.get(policy_id)
         if not policy or not assessment:
+            continue
+        if not _is_recent(policy, today):
             continue
         identity = f"{policy_id}:{assessment.get('content_hash', '')}"
         if identity not in ledger["sent"]:
