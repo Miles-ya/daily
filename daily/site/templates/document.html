@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="document-page">
+  <a class="back" href="{{ asset(channel ~ '/') }}">← 返回日报</a>
+  <header class="document-header"><small>{{ document.source_name }} · {{ document.publish_date or '日期未知' }}</small><h1>{{ document.title }}</h1><p>{{ analysis.one_sentence if analysis else '该文件尚未完成 AI 解析。' }}</p></header>
+  {% if analysis %}
+  <section class="document-section"><h2>30 秒看懂</h2><p>{{ analysis.overall_judgement }}</p></section>
+  <section class="document-section"><h2>值得关注</h2><ul>{% for point in analysis.strong_signals %}<li>{{ point }}</li>{% else %}<li>{{ analysis.recommendation_reason }}</li>{% endfor %}</ul></section>
+  <section class="document-section"><h2>需要警惕</h2><ul>{% for point in analysis.weak_signals %}<li>{{ point }}</li>{% else %}<li>当前资料没有提供足够证据。</li>{% endfor %}</ul></section>
+  <section class="document-section"><h2>风险与后续观察</h2><ul>{% for point in analysis.risks %}<li>{{ point }}</li>{% endfor %}{% for point in analysis.watch_next %}<li>{{ point }}</li>{% endfor %}</ul></section>
+  {% endif %}
+  <section class="document-section"><h2>原始文件</h2><a class="source-link" href="{{ document.url }}" target="_blank" rel="noopener">查看官方原文 ↗</a></section>
+</article>
+{% endblock %}

@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="channel-row"><nav class="channels"><a class="{{ 'active' if channel == 'economy' }}" href="{{ asset('economy/') }}">经济</a><a class="{{ 'active' if channel == 'ai' }}" href="{{ asset('ai/') }}">AI</a></nav><span>日报归档</span></div>
+<header class="archive-title"><h1>{{ channel_name }}日报归档</h1><p>每个日期只展示属于当天的日报。</p></header>
+<div class="archive-list">{% for item in calendar %}<a class="archive-row" href="{{ asset(channel ~ '/' ~ item.iso ~ '/') }}"><time>{{ item.display }}</time><span>{{ item.weekday }}</span><strong class="{{ 'empty' if item.report.status == 'empty' }}">{% if item.report.status == 'published' %}{{ item.report.one_sentence }}{% elif item.report.status == 'unavailable' %}日报尚未完成{% else %}当日无日报{% endif %}</strong></a>{% endfor %}</div>
+{% endblock %}
