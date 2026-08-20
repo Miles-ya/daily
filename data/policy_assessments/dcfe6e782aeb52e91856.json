@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "中国人民银行关于《修改〈企业征信机构备案管理办法〉有关公告(征..."
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行正式发布《中国人民银行关于《修改〈企业征信机构备案管理办法〉有关公告(征...》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：中国人民银行关于《修改〈企业征信机构备案管理办法〉有关公告(征..."
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "0a7bc8f161669812aebcde8aae44995a80be45a012470f05f3f99e2978f537a9",
+  "importance": "normal",
+  "policy_id": "dcfe6e782aeb52e91856",
+  "relevant": true,
+  "score": 50,
+  "topics": [
+    "就业与城市"
+  ]
+}

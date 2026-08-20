@@ -18,7 +18,7 @@ class DeepSeekAnalyzer(AnalyzerProvider):
     default_endpoint = "https://api.deepseek.com/chat/completions"
 
     def __init__(self, cache_dir: Path, api_key: str | None = None, model: str | None = None,
-                 schema_path: Path | None = None, retries: int = 2):
+                 schema_path: Path | None = None, retries: int = 2, system_prompt: str | None = None):
         self.api_key = api_key or os.getenv("DEEPSEEK_API_KEY")
         self.model = model or os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
         self.endpoint = os.getenv("DEEPSEEK_BASE_URL", self.default_endpoint).rstrip("/")
@@ -26,6 +26,7 @@ class DeepSeekAnalyzer(AnalyzerProvider):
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         schema_path = schema_path or Path(__file__).parents[1] / "schemas" / "analysis-v1.json"
         self.schema = json.loads(schema_path.read_text(encoding="utf-8"))
+        self.system_prompt = system_prompt or SYSTEM_PROMPT
         self.retries = retries
         self.last_usage: dict = {}
 
@@ -65,7 +66,7 @@ class DeepSeekAnalyzer(AnalyzerProvider):
         payload = {
             "model": self.model,
             "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "system", "content": self.system_prompt},
                 {"role": "user", "content": json.dumps({"output_schema": self.schema, "input": json.loads(source)}, ensure_ascii=False)[:60000]},
             ],
             "temperature": 0.1,

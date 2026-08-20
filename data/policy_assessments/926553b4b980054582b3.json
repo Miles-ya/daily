@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于做好2026年享受税收优惠政策的集成电路企业或项目、软件企业清单制定工作的通知(发改高技〔2026〕487号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于做好2026年享受税收优惠政策的集成电路企业或项目、软件企业清单制定工作的通知(发改高技〔2026〕487号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于做好2026年享受税收优惠政策的集成电路企业或项目、软件企业清单制定工作的通知(发改高技〔2026〕487号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "5ac37829e0230920d00241218a6376f1707d4f0627e479a2ad5a361f566bc27a",
+  "importance": "important",
+  "policy_id": "926553b4b980054582b3",
+  "relevant": true,
+  "score": 73,
+  "topics": [
+    "产业方向",
+    "资金流向"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于印发贯彻实施民营经济促进法典型案例(第一批)的通知(发改民营〔2026〕708号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于印发贯彻实施民营经济促进法典型案例(第一批)的通知(发改民营〔2026〕708号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于印发贯彻实施民营经济促进法典型案例(第一批)的通知(发改民营〔2026〕708号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "c66a9166b0c3e90dbc8ff84a0372031f00f4ac2f1ea44ffac73521527f714390",
+  "importance": "important",
+  "policy_id": "6b716d52d8e368fa0911",
+  "relevant": true,
+  "score": 73,
+  "topics": [
+    "资金流向",
+    "创业机会",
+    "就业与城市",
+    "宏观环境"
+  ]
+}

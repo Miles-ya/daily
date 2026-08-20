@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "中国人民银行关于银行业金融机构人民币跨境同业融资业务有关事宜的通知（银..."
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行正式发布《中国人民银行关于银行业金融机构人民币跨境同业融资业务有关事宜的通知（银...》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：中国人民银行关于银行业金融机构人民币跨境同业融资业务有关事宜的通知（银..."
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "0233281a4873d65625648569b78b30ce3f6884a50282aaef0cc6fe951435b163",
+  "importance": "normal",
+  "policy_id": "90463495d586d83021bd",
+  "relevant": true,
+  "score": 43,
+  "topics": [
+    "就业与城市",
+    "宏观环境"
+  ]
+}

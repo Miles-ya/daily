@@ -1,5 +1,5 @@
 site:
-  title: Daily
+  title: 政策雷达
   base_url: /daily/
 pipeline:
   request_timeout: 25
@@ -7,3 +7,9 @@ pipeline:
   user_agent: DailyIntelligence/0.1 (+https://github.com/Miles-ya/daily)
   featured_score: 65
   breaking_score: 90
+policy:
+  refresh_latest: 3
+  initial_backfill_per_source: 5
+  max_content_chars: 60000
+  important_score: 70
+  max_ai_per_run: 12

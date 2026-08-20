@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "专家解读｜《个人信息出境认证办法》公布 完成数据跨境制度体系新拼图"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家互联网信息办公室正式发布《专家解读｜《个人信息出境认证办法》公布 完成数据跨境制度体系新拼图》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：专家解读｜《个人信息出境认证办法》公布 完成数据跨境制度体系新拼图"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "2f4e8cccc08f30bf12abb2592686843edd8d242c16b302c596a4f918f75bd120",
+  "importance": "important",
+  "policy_id": "266a094e6fda2b83dd8e",
+  "relevant": true,
+  "score": 73,
+  "topics": [
+    "创业机会",
+    "宏观环境"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "商务部等9部门关于促进药品零售行业高质量发展的意见"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《商务部等9部门关于促进药品零售行业高质量发展的意见》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：商务部等9部门关于促进药品零售行业高质量发展的意见"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "5eb8f8e68693ff76896a8499b703e024cdaa0ed30959bb02dfbe3cdad304dd6c",
+  "importance": "important",
+  "policy_id": "4fc2f75b3c5fb80f3950",
+  "relevant": true,
+  "score": 78,
+  "topics": [
+    "产业方向",
+    "创业机会"
+  ]
+}

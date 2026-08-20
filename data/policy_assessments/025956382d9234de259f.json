@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "国家发展改革委关于印发《中央预算内投资计划管理办法》的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化；出现明确资金或资源配置线索",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《国家发展改革委关于印发《中央预算内投资计划管理办法》的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：国家发展改革委关于印发《中央预算内投资计划管理办法》的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "d13e6dc327241eda8fb088f2566282056158f63880e56279af9ff540579cb7bc",
+  "importance": "important",
+  "policy_id": "025956382d9234de259f",
+  "relevant": true,
+  "score": 85,
+  "topics": [
+    "资金流向"
+  ]
+}

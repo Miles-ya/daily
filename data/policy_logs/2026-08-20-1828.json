@@ -1,0 +1,42 @@
+{
+  "changed": [
+    "dca46119304052d7de82",
+    "16e0c6556f6538774489",
+    "003206b05424ae05f1ea",
+    "6d691661feb46b209d86",
+    "d89b0f7fda8144986b5d",
+    "ce7cad1276adf65fd0a3",
+    "1a0d16af9b31f97091ae",
+    "20cb94c361dd16e3a0bc",
+    "6fb4819f0cbe6a31d2b9",
+    "e76a52a957a1f56d66ad",
+    "badc93e01ce3321c935d",
+    "a2adf0d04245debec4e8",
+    "029cbea15efd8fc20a52",
+    "7166c3e56966a109b9e6",
+    "ac2b32be71bd7b497bc7",
+    "1c43ddeacec18423c48c",
+    "a1eddc7123b4744c742c",
+    "db21f82a6b564ce47dcb",
+    "add43702dd625192f8f3",
+    "eac46927d1392dc6730d",
+    "bc620246f83149f0b9a3",
+    "53a2e3c87333577f93ed",
+    "576634e6e1f9f0ab1a7d",
+    "232f050f893900b7eb2c",
+    "603fd8be72162567ad2c",
+    "6a86dad64a7e42e91b1f",
+    "358b52eb2325b8e13857",
+    "1732ff4bc455d16810e8",
+    "2c079ea30d544bdbe8d6"
+  ],
+  "discovered": 179,
+  "errors": [
+    {
+      "error": "请求失败: 海关总署: 412 Client Error: Precondition Failed for url: http://www.customs.gov.cn/customs/302249/302266/302267/index.html",
+      "source": "customs",
+      "stage": "discover"
+    }
+  ],
+  "generated_on": "2026-08-20T18:28:32+08:00"
+}

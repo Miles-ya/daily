@@ -1,0 +1,44 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2026-06-01"
+    ],
+    "evidence": [
+      "中国人民银行 海关总署公告〔2026〕第11号"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行正式发布《中国人民银行 海关总署公告〔2026〕第11号》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：中国人民银行 海关总署公告〔2026〕第11号"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:28:46+00:00",
+  "content_hash": "a3660bc9995b9fce9c5050463917ce6187f5374e53fb399bf1edb3164c3e45ad",
+  "importance": "normal",
+  "policy_id": "db21f82a6b564ce47dcb",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "创业机会",
+    "就业与城市",
+    "宏观环境"
+  ]
+}

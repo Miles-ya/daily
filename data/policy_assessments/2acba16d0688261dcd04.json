@@ -1,0 +1,38 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "科技部政府信息公开指南"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "科技部正式发布《科技部政府信息公开指南》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：科技部政府信息公开指南"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "583a1f24adbc5721290e9e9972a4741910458b00ba303ef63d976374aa0185f4",
+  "importance": "normal",
+  "policy_id": "2acba16d0688261dcd04",
+  "relevant": true,
+  "score": 50,
+  "topics": []
+}

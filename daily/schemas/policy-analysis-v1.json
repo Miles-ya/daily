@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "policy-analysis-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["one_sentence", "what_changed", "policy_tools", "funds_flow", "affected_industries", "opportunities_1_3y", "student_signals", "city_signals", "macro_signals", "risks", "deadlines", "evidence", "importance", "importance_reason", "confidence"],
+  "properties": {
+    "one_sentence": {"type": "string"},
+    "what_changed": {"type": "array", "items": {"type": "string"}},
+    "policy_tools": {"type": "array", "items": {"type": "string"}},
+    "funds_flow": {"type": "object", "additionalProperties": false, "required": ["confirmed", "unknown"], "properties": {"confirmed": {"type": "array", "items": {"type": "string"}}, "unknown": {"type": "array", "items": {"type": "string"}}}},
+    "affected_industries": {"type": "array", "items": {"type": "string"}},
+    "opportunities_1_3y": {"type": "array", "items": {"type": "string"}},
+    "student_signals": {"type": "array", "items": {"type": "string"}},
+    "city_signals": {"type": "array", "items": {"type": "string"}},
+    "macro_signals": {"type": "array", "items": {"type": "string"}},
+    "risks": {"type": "array", "items": {"type": "string"}},
+    "deadlines": {"type": "array", "items": {"type": "string"}},
+    "evidence": {"type": "array", "items": {"type": "string"}},
+    "importance": {"type": "string", "enum": ["important", "normal"]},
+    "importance_reason": {"type": "string"},
+    "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+  }
+}

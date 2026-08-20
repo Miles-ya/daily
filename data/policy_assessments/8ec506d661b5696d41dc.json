@@ -1,0 +1,38 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "交通运输部 公安部 应急管理部 中国气象局 国家铁路局 中国民用航空局 国家邮政局 中国国家铁路集团有限公司关于印发《2026年综合运输春运安全生产和服务保障总体方案》的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《交通运输部 公安部 应急管理部 中国气象局 国家铁路局 中国民用航空局 国家邮政局 中国国家铁路集团有限公司关于印发《2026年综合运输春运安全生产和服务保障总体方案》的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：交通运输部 公安部 应急管理部 中国气象局 国家铁路局 中国民用航空局 国家邮政局 中国国家铁路集团有限公司关于印发《2026年综合运输春运安全生产和服务保障总体方案》的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "0d4f7cbcc87a7af0094c1d390030019752fd20c0dd98674eb291e7ffe5331295",
+  "importance": "important",
+  "policy_id": "8ec506d661b5696d41dc",
+  "relevant": true,
+  "score": 70,
+  "topics": []
+}

@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "跨境电子商务出口退运商品税收优惠政策明确"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "财政部正式发布《跨境电子商务出口退运商品税收优惠政策明确》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：跨境电子商务出口退运商品税收优惠政策明确"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "20067dda34d7ec89d40d165bc43da385e3647abe99a5cb30e5d7fc767bd3bf73",
+  "importance": "normal",
+  "policy_id": "b479d84865e290f76cbe",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "资金流向",
+    "宏观环境"
+  ]
+}

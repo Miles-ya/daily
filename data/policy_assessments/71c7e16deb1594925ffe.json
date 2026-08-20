@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于印发《可再生能源发展“十五五”规划》的通知(发改能源〔2026〕1067号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于印发《可再生能源发展“十五五”规划》的通知(发改能源〔2026〕1067号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于印发《可再生能源发展“十五五”规划》的通知(发改能源〔2026〕1067号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "6af6eaec918e819c89f436d827bb48344339910394319007609586843a657297",
+  "importance": "normal",
+  "policy_id": "71c7e16deb1594925ffe",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "产业方向",
+    "就业与城市"
+  ]
+}

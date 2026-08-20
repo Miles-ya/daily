@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "民政部 财政部关于进一步健全完善临时救助制度的意见"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《民政部 财政部关于进一步健全完善临时救助制度的意见》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：民政部 财政部关于进一步健全完善临时救助制度的意见"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:28:46+00:00",
+  "content_hash": "4a63124a461451e681e9713c77593583dca59b08bfcf9d1bb3f38e2a97a8e9a9",
+  "importance": "important",
+  "policy_id": "1a0d16af9b31f97091ae",
+  "relevant": true,
+  "score": 78,
+  "topics": [
+    "资金流向",
+    "就业与城市"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "changed": [],
+  "discovered": 179,
+  "errors": [
+    {
+      "error": "请求失败: 海关总署: HTTPSConnectionPool(host='www.customs.gov.cn', port=443): Max retries exceeded with url: /customs/302249/302266/302267/index.html (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1000)')))",
+      "source": "customs",
+      "stage": "discover"
+    }
+  ],
+  "generated_on": "2026-08-20T18:30:51+08:00"
+}

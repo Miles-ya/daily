@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "研发费用加计扣除政策执行指引（2.0版）"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "科技部正式发布《研发费用加计扣除政策执行指引（2.0版）》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：研发费用加计扣除政策执行指引（2.0版）"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "150ad2b884247e84a6f956c674ed1fb6bdeb5df77cb8f72a79b8041602454253",
+  "importance": "normal",
+  "policy_id": "a35525e98ed75d826196",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "资金流向",
+    "创业机会"
+  ]
+}

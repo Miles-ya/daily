@@ -1,0 +1,43 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2026-01-01"
+    ],
+    "evidence": [
+      "中华人民共和国增值税法实施条例"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《中华人民共和国增值税法实施条例》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：中华人民共和国增值税法实施条例"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "b3a1d7612eeafe2696980775013961c7ae01482d290613553c7046cb19a13030",
+  "importance": "important",
+  "policy_id": "a25263030359f1a4deee",
+  "relevant": true,
+  "score": 93,
+  "topics": [
+    "资金流向",
+    "宏观环境"
+  ]
+}

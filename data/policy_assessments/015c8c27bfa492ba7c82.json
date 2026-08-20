@@ -1,0 +1,43 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "科技部 中国人民银行 金融监管总局 中国证监会 国家发展改革委 财政部 国务院国资委 关于印发《加快构建科技金融体制 有力支撑高水平科技自立自强的若干政策举措》的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "科技部正式发布《科技部 中国人民银行 金融监管总局 中国证监会 国家发展改革委 财政部 国务院国资委 关于印发《加快构建科技金融体制 有力支撑高水平科技自立自强的若干政策举措》的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：科技部 中国人民银行 金融监管总局 中国证监会 国家发展改革委 财政部 国务院国资委 关于印发《加快构建科技金融体制 有力支撑高水平科技自立自强的若干政策举措》的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "53838f75cf80f3c4b01c00b99c801e02cc41f6b28e725af6a7ac983792c4401d",
+  "importance": "important",
+  "policy_id": "015c8c27bfa492ba7c82",
+  "relevant": true,
+  "score": 73,
+  "topics": [
+    "资金流向",
+    "创业机会",
+    "就业与城市",
+    "宏观环境"
+  ]
+}

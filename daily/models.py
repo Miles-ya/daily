@@ -79,3 +79,49 @@ class EconomicEvent:
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
+
+
+@dataclass(slots=True)
+class PolicyDocument:
+    id: str
+    source_id: str
+    source_name: str
+    url: str
+    canonical_url: str
+    title: str
+    publish_date: str | None
+    publish_time: str | None
+    crawl_time: str
+    content: str
+    content_hash: str
+    issuing_bodies: list[str] = field(default_factory=list)
+    document_number: str = ""
+    effective_date: str | None = None
+    policy_status: Literal["formal", "draft", "interpretation"] = "formal"
+    topics: list[str] = field(default_factory=list)
+    attachments: list[dict[str, str]] = field(default_factory=list)
+    extraction_complete: bool = True
+    raw_metadata: dict[str, Any] = field(default_factory=dict)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, value: dict[str, Any]) -> "PolicyDocument":
+        return cls(**value)
+
+
+@dataclass(slots=True)
+class PolicyAssessment:
+    policy_id: str
+    content_hash: str
+    relevant: bool
+    topics: list[str]
+    importance: Literal["important", "normal"]
+    score: int
+    analysis_status: Literal["complete", "pending"] = "pending"
+    analysis: dict[str, Any] = field(default_factory=dict)
+    assessed_at: str = field(default_factory=utc_now)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)

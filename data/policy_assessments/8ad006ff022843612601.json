@@ -1,0 +1,38 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于印发《西藏生态安全屏障保护与建设规划(修编)》的通知(发改农经〔2026〕508号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于印发《西藏生态安全屏障保护与建设规划(修编)》的通知(发改农经〔2026〕508号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于印发《西藏生态安全屏障保护与建设规划(修编)》的通知(发改农经〔2026〕508号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "0ea917e9193cfe873da88c43d322fa36b4031a69ad21ec955d086c85f8af7694",
+  "importance": "normal",
+  "policy_id": "8ad006ff022843612601",
+  "relevant": true,
+  "score": 50,
+  "topics": []
+}

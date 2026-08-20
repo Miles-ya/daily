@@ -1,0 +1,44 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "科技部 金融监管总局 工业和信息化部 国家知识产权局印发《关于加快推动科技保险高质量发展 有力支撑高水平科技自立自强的若干意见》的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "科技部正式发布《科技部 金融监管总局 工业和信息化部 国家知识产权局印发《关于加快推动科技保险高质量发展 有力支撑高水平科技自立自强的若干意见》的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：科技部 金融监管总局 工业和信息化部 国家知识产权局印发《关于加快推动科技保险高质量发展 有力支撑高水平科技自立自强的若干意见》的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:28:46+00:00",
+  "content_hash": "768c8890edf77cc622e7292234ac0b5b13c0cbcdce53e52575aab2f9b1640fe5",
+  "importance": "important",
+  "policy_id": "7166c3e56966a109b9e6",
+  "relevant": true,
+  "score": 73,
+  "topics": [
+    "产业方向",
+    "资金流向",
+    "创业机会",
+    "就业与城市",
+    "宏观环境"
+  ]
+}

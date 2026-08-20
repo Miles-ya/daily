@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于印发《煤炭工业发展“十五五”规划》的通知(发改能源〔2026〕979号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于印发《煤炭工业发展“十五五”规划》的通知(发改能源〔2026〕979号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于印发《煤炭工业发展“十五五”规划》的通知(发改能源〔2026〕979号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:28:46+00:00",
+  "content_hash": "93d0621596e1531b185da4bc887956e80260569623f7d81a0da81260055d3440",
+  "importance": "normal",
+  "policy_id": "232f050f893900b7eb2c",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "产业方向",
+    "创业机会",
+    "宏观环境"
+  ]
+}

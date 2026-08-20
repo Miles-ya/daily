@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "国务院关税税则委员会关于调整对原产于加拿大的部分进口商品加征关税措施的公告"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "财政部正式发布《国务院关税税则委员会关于调整对原产于加拿大的部分进口商品加征关税措施的公告》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：国务院关税税则委员会关于调整对原产于加拿大的部分进口商品加征关税措施的公告"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "069cd82a7b82d6bb06b7118e9e0502df4bb5ba0bd6e137775e346702465320e2",
+  "importance": "normal",
+  "policy_id": "eb8f12a6b942d9b1f1d5",
+  "relevant": true,
+  "score": 50,
+  "topics": [
+    "宏观环境"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "数据出境安全管理政策法规问答（2026年1月）"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "国家互联网信息办公室正式发布《数据出境安全管理政策法规问答（2026年1月）》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：数据出境安全管理政策法规问答（2026年1月）"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "7fd42f8492accf714307daf3ec71ac92ff744f81bb4df0481aff9b2a39c5dd91",
+  "importance": "normal",
+  "policy_id": "b3ffa1527e17dd57976c",
+  "relevant": true,
+  "score": 50,
+  "topics": [
+    "就业与城市"
+  ]
+}

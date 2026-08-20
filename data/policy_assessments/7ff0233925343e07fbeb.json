@@ -1,0 +1,38 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于核定南水北调中线干线工程供水价格的通知(发改价格〔2026〕630号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "与关注领域相关",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于核定南水北调中线干线工程供水价格的通知(发改价格〔2026〕630号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于核定南水北调中线干线工程供水价格的通知(发改价格〔2026〕630号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "ac9f138fa25aece1c14504157a533a068da21fe065c8a6519f6a0bc33b29d2da",
+  "importance": "normal",
+  "policy_id": "7ff0233925343e07fbeb",
+  "relevant": true,
+  "score": 35,
+  "topics": []
+}

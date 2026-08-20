@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2020-12-01"
+    ],
+    "evidence": [
+      "国家科学技术奖励条例（国务院令第782号第四次修订）"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "科技部正式发布《国家科学技术奖励条例（国务院令第782号第四次修订）》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：国家科学技术奖励条例（国务院令第782号第四次修订）"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "a30e050cc5717c2870ec23a8ba37c2a0bb3962d28656093f32393cc31b47664d",
+  "importance": "normal",
+  "policy_id": "400ccfd5b8df14d14858",
+  "relevant": true,
+  "score": 50,
+  "topics": [
+    "资金流向"
+  ]
+}

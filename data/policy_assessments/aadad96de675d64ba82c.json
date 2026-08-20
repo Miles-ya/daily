@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于《中国人民银行管理领域严重失信主体名单管理办法（征求意见..."
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；目前为征求意见稿；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行征求意见《关于《中国人民银行管理领域严重失信主体名单管理办法（征求意见...》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "征求意见：关于《中国人民银行管理领域严重失信主体名单管理办法（征求意见..."
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "afd2ff068606374cd8efd757a9790b6428d420b555f3df7010b69c3c33909e2d",
+  "importance": "normal",
+  "policy_id": "aadad96de675d64ba82c",
+  "relevant": true,
+  "score": 65,
+  "topics": [
+    "资金流向",
+    "就业与城市"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于开展重点行业节能降碳改造攻坚三年行动的通知(发改环资〔2026〕698号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于开展重点行业节能降碳改造攻坚三年行动的通知(发改环资〔2026〕698号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于开展重点行业节能降碳改造攻坚三年行动的通知(发改环资〔2026〕698号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "53ec6e1bb41f75f406f24d24b4fbd5185dac90a9606ffc976b2122647c5fe5cc",
+  "importance": "normal",
+  "policy_id": "e9562fa8a0a1aa1a2184",
+  "relevant": true,
+  "score": 50,
+  "topics": [
+    "资金流向"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "[政策原文]"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "商务部正式发布《[政策原文]》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：[政策原文]"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "e8ceea00506b45480246fd63dc7c2955da818a84630799b3a1ead715cf1170d7",
+  "importance": "important",
+  "policy_id": "1ff3f2193e159d9bc649",
+  "relevant": true,
+  "score": 73,
+  "topics": [
+    "产业方向",
+    "资金流向",
+    "创业机会",
+    "就业与城市",
+    "宏观环境"
+  ]
+}

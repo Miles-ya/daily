@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "personal-brief-v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["why_for_me", "action_today", "continue_watching", "new_directions", "suggested_judgement_changes", "ignore_reason"],
+  "properties": {
+    "why_for_me": {"type": "string"},
+    "action_today": {"type": "string"},
+    "continue_watching": {"type": "array", "items": {"type": "string"}},
+    "new_directions": {"type": "array", "items": {"type": "string"}},
+    "suggested_judgement_changes": {"type": "array", "items": {"type": "string"}},
+    "ignore_reason": {"type": "string"}
+  }
+}

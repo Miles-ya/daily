@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "“十五五”期间相关展会展期内销售的进口展品税收优惠政策明确"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "财政部正式发布《“十五五”期间相关展会展期内销售的进口展品税收优惠政策明确》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：“十五五”期间相关展会展期内销售的进口展品税收优惠政策明确"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "9f9d341dcbf1b374152a8769495560ccfe6bdb8e3d96f62452536330c283d1a6",
+  "importance": "normal",
+  "policy_id": "d666bb7ebcb6dde6488c",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "资金流向",
+    "宏观环境"
+  ]
+}

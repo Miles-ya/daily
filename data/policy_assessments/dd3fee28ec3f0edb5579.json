@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "四部门印发通知要求做好帮扶小额信贷工作"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索",
+    "macro_signals": [],
+    "one_sentence": "财政部正式发布《四部门印发通知要求做好帮扶小额信贷工作》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：四部门印发通知要求做好帮扶小额信贷工作"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "053160b39e713dd09d82d6a8315d8a4c583acabfa3cff08d6ec2f94ae5ceb5ca",
+  "importance": "normal",
+  "policy_id": "dd3fee28ec3f0edb5579",
+  "relevant": true,
+  "score": 65,
+  "topics": [
+    "资金流向"
+  ]
+}

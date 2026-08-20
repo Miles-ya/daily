@@ -1,0 +1,38 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "数据出境安全管理政策问答（2025年10月）"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "国家互联网信息办公室正式发布《数据出境安全管理政策问答（2025年10月）》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：数据出境安全管理政策问答（2025年10月）"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "eb2bd385435d251f464f8d41166c8cc63f7a0a6ce85f269fa9df3cd6e798e1c6",
+  "importance": "normal",
+  "policy_id": "71540b6945da37feb583",
+  "relevant": true,
+  "score": 50,
+  "topics": []
+}

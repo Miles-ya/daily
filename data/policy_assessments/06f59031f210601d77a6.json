@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于在全社会推进儿童友好建设的意见(发改社会〔2026〕258号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于在全社会推进儿童友好建设的意见(发改社会〔2026〕258号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于在全社会推进儿童友好建设的意见(发改社会〔2026〕258号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "1fb5f003f09e702994bcbf53dddf8bfe42333a35ec9cca4d6c442972a8286724",
+  "importance": "normal",
+  "policy_id": "06f59031f210601d77a6",
+  "relevant": true,
+  "score": 65,
+  "topics": [
+    "资金流向"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "国家发展改革委印发《关于推进城际铁路健康可持续发展的意见》的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《国家发展改革委印发《关于推进城际铁路健康可持续发展的意见》的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：国家发展改革委印发《关于推进城际铁路健康可持续发展的意见》的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "1a878fb9747d517ea33111b6c88ccf7ae0fa737df68c6fb7dd5012244bfa631e",
+  "importance": "important",
+  "policy_id": "729d0687f22dad7496fa",
+  "relevant": true,
+  "score": 70,
+  "topics": [
+    "就业与城市"
+  ]
+}

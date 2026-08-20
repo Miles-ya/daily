@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "稳外贸稳外资政策措施"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "商务部正式发布《稳外贸稳外资政策措施》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：稳外贸稳外资政策措施"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "0366eb9b83773987e34f3cde29ff9d8a2cae296e5450c60d84da54dc4782628d",
+  "importance": "normal",
+  "policy_id": "3aed84b0cbe0a6d01325",
+  "relevant": true,
+  "score": 43,
+  "topics": [
+    "产业方向",
+    "宏观环境"
+  ]
+}

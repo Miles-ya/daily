@@ -1,0 +1,38 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "国务院办公厅关于印发《落实水资源刚性约束制度考核办法》的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《国务院办公厅关于印发《落实水资源刚性约束制度考核办法》的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：国务院办公厅关于印发《落实水资源刚性约束制度考核办法》的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "6337502e7dc27fc1afc27e96c399409daea853399a0389c65f981a4d47e14dab",
+  "importance": "important",
+  "policy_id": "31e9e671c8bd258c32ca",
+  "relevant": true,
+  "score": 70,
+  "topics": []
+}

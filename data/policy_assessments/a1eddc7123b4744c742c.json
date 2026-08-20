@@ -1,0 +1,43 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2026-05-15"
+    ],
+    "evidence": [
+      "中国人民银行公告〔2026〕第10号"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行正式发布《中国人民银行公告〔2026〕第10号》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：中国人民银行公告〔2026〕第10号"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:28:46+00:00",
+  "content_hash": "4d0b3ccdcb3dd4ca3db7a98e7457d609360631a282e8f394eef0ba833a686c55",
+  "importance": "normal",
+  "policy_id": "a1eddc7123b4744c742c",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "就业与城市",
+    "宏观环境"
+  ]
+}

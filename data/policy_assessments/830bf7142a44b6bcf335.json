@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于推动低空保险高质量发展的实施意见(发改低空〔2026〕123号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于推动低空保险高质量发展的实施意见(发改低空〔2026〕123号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于推动低空保险高质量发展的实施意见(发改低空〔2026〕123号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "ddb8fdcb0850888a86cb227798c35216068704535343c569cf79cb8e7e8fe5a3",
+  "importance": "normal",
+  "policy_id": "830bf7142a44b6bcf335",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "产业方向",
+    "创业机会",
+    "宏观环境"
+  ]
+}

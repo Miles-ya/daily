@@ -1,6 +1,78 @@
 sources:
+  gov_cn:
+    name: 中国政府网
+    kind: policy
+    list_urls:
+      - https://www.gov.cn/zhengce/zhengceku/bmwj/home.htm
+      - https://www.gov.cn/zhengce/zhengceku/gwywj/home.htm
+    include_patterns: ["/zhengce/content/", "/zhengce/zhengceku/"]
+    max_documents: 40
+  ndrc:
+    name: 国家发展改革委
+    kind: policy
+    list_urls:
+      - https://www.ndrc.gov.cn/xxgk/zcfb/tz/wap_index.html
+      - https://www.ndrc.gov.cn/xxgk/zcfb/ghwb/wap_index.html
+      - https://www.ndrc.gov.cn/xxgk/zcfb/gfxwj/wap_index.html
+    include_patterns: ["/xxgk/zcfb/"]
+    max_documents: 30
+  mof:
+    name: 财政部
+    kind: policy
+    list_urls: ["https://www.mof.gov.cn/zhengwuxinxi/zhengcefabu/"]
+    include_patterns: ["/zhengwuxinxi/zhengcefabu/", "/zhengcefabu/"]
+    max_documents: 30
+  pbc:
+    name: 中国人民银行
+    kind: policy
+    list_urls:
+      - https://www.pbc.gov.cn/tiaofasi/144941/3581332/index.html
+      - https://www.pbc.gov.cn/tiaofasi/144941/144957/index.html
+      - https://www.pbc.gov.cn/tiaofasi/144941/144979/index.html
+    include_patterns: ["/tiaofasi/"]
+    max_documents: 30
+  mohurd:
+    name: 住房城乡建设部
+    kind: policy
+    list_urls: ["https://www.mohurd.gov.cn/gongkai/zc/wjk/index.html"]
+    include_patterns: ["/gongkai/zc/wjk/"]
+    max_documents: 30
+  miit:
+    name: 工业和信息化部
+    kind: policy
+    list_urls: ["https://wap.miit.gov.cn/xwfb/zxzc/index.html"]
+    include_patterns: ["/art/", "/zwgk/zcwj/", "/jgsj/"]
+    max_documents: 35
+  cac:
+    name: 国家互联网信息办公室
+    kind: policy
+    list_urls: ["https://www.cac.gov.cn/wxzw/sjzl/zcfg/A09370805index_1.htm"]
+    include_patterns: ["/c_"]
+    max_documents: 30
+  most:
+    name: 科技部
+    kind: policy
+    list_urls: ["https://www.most.gov.cn/xxgk/xinxifenlei/fdzdgknr/fgzc/"]
+    include_patterns: ["/xxgk/"]
+    max_documents: 30
+  mofcom:
+    name: 商务部
+    kind: policy
+    list_urls:
+      - https://www.mofcom.gov.cn/zcfb/
+      - https://www.mofcom.gov.cn/zcjd/
+    include_patterns: ["/zcfb/", "/article/"]
+    max_documents: 40
+  customs:
+    name: 海关总署
+    kind: policy
+    enabled: false
+    list_urls: ["https://www.customs.gov.cn/customs/302249/302266/302267/index.html"]
+    include_patterns: ["/302249/302266/302267/"]
+    max_documents: 30
   stats_gov:
     name: 国家统计局
+    kind: legacy
     channel: economy
     list_urls:
       - https://www.stats.gov.cn/sj/zxfb/

@@ -1,21 +1,17 @@
-# Daily
+# 政策雷达
 
-Daily 是一个 AI 驱动的每日日报系统。V1 聚焦中国经济，只接入国家统计局，将公开资料自动抓取、去重、逐篇解析，再按发布日期汇总为当天的经济日报。
+政策雷达持续监测少数中央政策源，把新文件解析成可搜索的公开政策流，并将结合个人情况的行动判断私发到 Telegram。网站不再按“日报”组织：有新政策就增加一条，没有更新就保持现状。
 
-它不是新闻搬运站。项目首先回答：今天真正发生了什么、哪些变化值得关注、与此前相比有什么不同。
+## 工作方式
 
-## 当前能力
+- 每天北京时间 08:07–18:07，每小时扫描一次。
+- 关注产业方向、资金流向、创业机会、就业与城市、宏观环境。
+- 监测中国政府网、国家发展改革委、财政部、中国人民银行、住房城乡建设部、工业和信息化部、国家网信办、科技部、商务部等官方来源。
+- 同一文件的不同部门转载会按文号或标题合并，并保留镜像链接。
+- 网站只展示政策事实、公共解析、证据和不确定性。
+- Telegram 才展示“对我意味着什么”“所以我该干什么”等个性化判断。
 
-- 国家统计局“数据发布 / 数据解读 / 最新发布和解读”列表与详情抓取
-- Channel、Document、EconomicEvent、Metric 通用数据模型
-- 宏观总览、官方解读和发布会聚合为一个经济事件
-- 工业、消费、投资、民间投资、房地产、就业、CPI、PPI、外贸、服务业和能源指标提取
-- 本地历史序列、变化方向、透明经济评分、精选和热点
-- 每份 Document 独立完成 DeepSeek 结构化解析，再生成当天日报
-- JSON Schema 校验、失败重试、哈希缓存与无密钥降级
-- 兼容 `api.b.ai` 的流式 SSE 响应，在服务端完整组装 JSON 后再校验和缓存
-- 日期优先的日报、空白日、归档、逐文件解析、经济与 AI 模块化频道
-- GitHub Actions 每日自动更新和 GitHub Pages 独立部署
+AI 不可用时，抓取和网站仍会运行，政策先标记为“待完整分析”；后续轮次会自动补做分析。直接来源故障会写入运行日志，不会伪装成成功。
 
 ## 本地运行
 
@@ -23,57 +19,74 @@ Daily 是一个 AI 驱动的每日日报系统。V1 聚焦中国经济，只接�
 python3 -m venv .venv
 .venv/bin/pip install -e '.[dev]'
 .venv/bin/pytest
-SITE_BASE_URL=/ .venv/bin/daily pipeline --no-ai --max-documents 10
+
+# 真实扫描，不调用 AI
+SITE_BASE_URL=/ .venv/bin/daily policy --no-ai
+
+# 只用已有数据重建网站
+SITE_BASE_URL=/ .venv/bin/daily policy-build
+
+# 本地预览
 .venv/bin/python scripts/serve.py
 ```
 
-打开 `http://127.0.0.1:8000/`。构建 GitHub Pages 版本时使用默认的 `/daily/` base path：
+打开 `http://127.0.0.1:8000/`。GitHub Pages 使用 `/daily/` 作为基础路径。
+
+常用命令：
 
 ```bash
-.venv/bin/daily build
+# 不访问网络，用本地记录补分析并重建
+.venv/bin/daily policy --offline
+
+# 对指定政策执行 Telegram 通知
+ENABLE_TELEGRAM=true .venv/bin/daily policy-notify \
+  --policy-ids "policy-id-1,policy-id-2" \
+  --site-url "https://miles-ya.github.io/daily/"
 ```
 
-指定页面做真实抓取：
+旧的经济日报命令仍保留为兼容入口，但不再用于自动任务。
 
-```bash
-.venv/bin/daily pipeline --no-ai --url 'https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965056.html'
+## GitHub 配置
+
+在仓库 Settings → Secrets and variables → Actions 添加：
+
+- Secret `DEEPSEEK_API_KEY`：公共政策解析和私人简报。
+- Secret `TELEGRAM_BOT_TOKEN`：Telegram BotFather 生成的机器人令牌。
+- Secret `TELEGRAM_CHAT_ID`：接收私信的 chat ID。
+- Secret `PERSONAL_PROFILE_JSON`：只参与私人简报生成，不写入仓库、日志或网站。
+- Variable `DEEPSEEK_BASE_URL`：可选，默认 `https://api.b.ai/v1/chat/completions`。
+- Variable `DEEPSEEK_MODEL`：可选，默认 `deepseek-v4-flash`。
+
+`PERSONAL_PROFILE_JSON` 示例：
+
+```json
+{
+  "identity": "学生",
+  "horizon": "未来 1-3 年",
+  "priorities": ["挣钱", "就业", "创业", "城市选择", "行业判断"],
+  "cities": ["深圳", "杭州", "上海"]
+}
 ```
 
-未指定 `--date` 时，系统按北京时间生成并展示昨天的日报；当天没有新资料就保留为空，不会拿其他日期的内容回填。重复运行是幂等的：Document 使用规范 URL 稳定标识，正文哈希参与去重；Event 使用统计期稳定标识；DeepSeek 只解析未命中缓存的文件和事件。
+在 Settings → Pages 中选择 **GitHub Actions**，然后手动运行一次 **Policy monitor**。此后工作流会按北京时间每小时运行：先更新公开数据并发布 Pages，部署成功后再发送私人 Telegram 简报。通知账本只保存政策 ID 和内容哈希，用于防止重复推送。
 
-## 配置与 Secrets
+## 数据与隐私边界
 
-复制 `.env.example` 中需要的值到本地环境，或在 GitHub 仓库 Settings → Secrets and variables → Actions 配置：
+- `data/policies/`：官方原文、来源和元数据。
+- `data/policy_assessments/`：可公开的结构化政策解析。
+- `data/policy_ai_cache/`：可公开分析的 AI 缓存。
+- `data/policy_logs/`：每轮发现数、变化和错误。
+- `data/notifications/telegram.json`：不含消息正文的发送账本。
+- `site-output/`：静态网站产物，不提交。
 
-- `DEEPSEEK_API_KEY`：可选；缺失时仅跳过 AI，抓取和网站仍工作。
-- `DEEPSEEK_BASE_URL`：OpenAI 兼容的完整 Chat Completions 地址，当前使用 `https://api.b.ai/v1/chat/completions`。
-- `DEEPSEEK_MODEL`：推荐设置为仓库 Variable，当前使用 `deepseek-v4-flash`。
-- `SITE_BASE_URL`：Pages 固定为 `/daily/`，本地预览可设为 `/`。
-
-Telegram 的 `TELEGRAM_BOT_TOKEN`、`TELEGRAM_CHAT_ID` 和 `ENABLE_TELEGRAM` 已预留，但 V1 不发送消息。任何密钥都不得提交到 Git、生成数据或前端。
-
-## 数据可信性
-
-事实、官方解释和 AI 分析分层展示。指标保留 `source_document` 和 `source_text`；没有发布时间时 `publish_time` 保持 `null`；历史比较只读取 `data/metrics/series.json`。AI 不得补造数字，资金流向无明确证据时必须留空或标记为推测。
-
-数据按稳定 ID 或日期保存在 `data/`，逐文件结果位于 `data/document_analyses/`，网站产物在 `site-output/`（不提交）。每次运行的抓取或分析错误记录在 `data/logs/YYYY-MM-DD.json`；某一天只要还有文件未解析，该日日报就保持“尚未完成”，避免发布残缺汇总。
-
-## GitHub Pages 设置
-
-1. 创建公开仓库 `Miles-ya/daily` 并推送 `main`。
-2. 在 Settings → Pages → Build and deployment 中选择 **GitHub Actions**。
-3. 在 Actions 中手动运行一次 **Daily pipeline**。
-4. 成功后 **Deploy Pages** 自动发布到 `https://miles-ya.github.io/daily/`。
-
-定时任务使用 `15 23 * * *`（UTC），即北京时间每天 07:15。数据先提交到仓库，再由独立部署工作流发布，因此部署失败不会丢失抓取数据。
+私人画像只从 GitHub Secret 注入。私人简报使用临时缓存，在进程结束时删除；代码不会把画像或 Telegram 正文写入上述目录。
 
 ## 测试
 
-测试使用保存的国家统计局风格 HTML fixture，覆盖 URL 规范化、去重、分类、事件合并、指标来源、历史比较、评分、AI 降级与 Schema，以及 `/daily/` 资源路径。正式验收还会真实请求国家统计局页面；网络问题应被记录而不伪装成成功。
+```bash
+.venv/bin/pytest
+SITE_BASE_URL=/daily/ .venv/bin/daily policy-build
+git diff --check
+```
 
-## 下一阶段
-
-1. 扩充国家统计局页面变体和指标规则的回归样本。
-2. 接入中国政府网、国家发改委、财政部和中国人民银行。
-3. 增加 Telegram Digest 的实际发送、状态去重和失败重试。
-4. 在积累足够历史序列后增加克制的趋势图表与异常检测。
+测试覆盖政策筛选、主题识别、重要性评分、官方页面解析、公开站点结构和隐私隔离。

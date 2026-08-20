@@ -1,0 +1,44 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于印发《石油天然气发展“十五五”规划》的通知(发改能源〔2026〕1055号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于印发《石油天然气发展“十五五”规划》的通知(发改能源〔2026〕1055号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于印发《石油天然气发展“十五五”规划》的通知(发改能源〔2026〕1055号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:28:46+00:00",
+  "content_hash": "06fae84b3649c375039f0d63385ed7b0e4485b6cd5187d6eb736d8e7da0bb626",
+  "importance": "normal",
+  "policy_id": "6a86dad64a7e42e91b1f",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "产业方向",
+    "资金流向",
+    "创业机会",
+    "就业与城市",
+    "宏观环境"
+  ]
+}

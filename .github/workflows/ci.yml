@@ -1,0 +1,23 @@
+name: Tests
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - "daily/**"
+      - "tests/**"
+      - "config/**"
+      - "pyproject.toml"
+      - ".github/workflows/**"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -e '.[dev]'
+      - run: pytest
+      - run: SITE_BASE_URL=/daily/ daily policy-build

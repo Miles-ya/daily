@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "交通运输部 工业和信息化部 商务部 国务院国有资产监督管理委员会 国家金融监督管理总局 国家铁路局 中国民用航空局 国家邮政局关于印发《加快培育交通物流领军企业 提升产业链供应链服务保障能力行动方案》的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《交通运输部 工业和信息化部 商务部 国务院国有资产监督管理委员会 国家金融监督管理总局 国家铁路局 中国民用航空局 国家邮政局关于印发《加快培育交通物流领军企业 提升产业链供应链服务保障能力行动方案》的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：交通运输部 工业和信息化部 商务部 国务院国有资产监督管理委员会 国家金融监督管理总局 国家铁路局 中国民用航空局 国家邮政局关于印发《加快培育交通物流领军企业 提升产业链供应链服务保障能力行动方案》的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "130b39419589cb4fa85499ca88372a58e1312af4b6539823d060986c65db1eff",
+  "importance": "important",
+  "policy_id": "e5c23f8adac5615c44ae",
+  "relevant": true,
+  "score": 78,
+  "topics": [
+    "产业方向",
+    "创业机会"
+  ]
+}

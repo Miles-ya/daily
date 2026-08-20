@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2026-02-01"
+    ],
+    "evidence": [
+      "中国人民银行关于印发《非银行支付机构分类评级管理办法》的通知（银发〔20..."
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行正式发布《中国人民银行关于印发《非银行支付机构分类评级管理办法》的通知（银发〔20...》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：中国人民银行关于印发《非银行支付机构分类评级管理办法》的通知（银发〔20..."
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "36bd3db92b2d0563b7aee80bb52c91c3230bd39bf356a009c70669865f098469",
+  "importance": "normal",
+  "policy_id": "e1d12e2b75ad8f269e82",
+  "relevant": true,
+  "score": 50,
+  "topics": [
+    "就业与城市"
+  ]
+}

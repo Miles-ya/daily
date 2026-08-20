@@ -1,0 +1,38 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "《个人信息保护合规审计管理办法》实施有关事项答记者问"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "国家互联网信息办公室正式发布《《个人信息保护合规审计管理办法》实施有关事项答记者问》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：《个人信息保护合规审计管理办法》实施有关事项答记者问"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "43e4b03e627982f5628efb86eb2b253a935fc2b7bdea157048234c1d9f70ea96",
+  "importance": "normal",
+  "policy_id": "2bffce7b3320087324cc",
+  "relevant": true,
+  "score": 50,
+  "topics": []
+}

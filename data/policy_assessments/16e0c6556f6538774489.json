@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "财政部 税务总局关于调整部分能源资源行业企业城镇土地使用税政策的公告"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "与关注领域相关",
+    "macro_signals": [],
+    "one_sentence": "财政部正式发布《财政部 税务总局关于调整部分能源资源行业企业城镇土地使用税政策的公告》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：财政部 税务总局关于调整部分能源资源行业企业城镇土地使用税政策的公告"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:28:46+00:00",
+  "content_hash": "693cfd28cd4881a30f8f3c7c8f5917015291aad55fd56d3d3637da3188d23403",
+  "importance": "normal",
+  "policy_id": "16e0c6556f6538774489",
+  "relevant": true,
+  "score": 35,
+  "topics": [
+    "资金流向"
+  ]
+}

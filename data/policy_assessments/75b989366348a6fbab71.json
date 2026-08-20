@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2026-02-01"
+    ],
+    "evidence": [
+      "全民阅读促进条例"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "国务院或国务院部门文件；包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "中国政府网正式发布《全民阅读促进条例》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：全民阅读促进条例"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "39ce826bae97c106567cf9e59a1e3e97bf4b7c24a910684f84e456839cc752ca",
+  "importance": "important",
+  "policy_id": "75b989366348a6fbab71",
+  "relevant": true,
+  "score": 70,
+  "topics": [
+    "资金流向"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于印发《新型电力系统建设“十五五”规划》的通知(发改能源〔2026〕942号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于印发《新型电力系统建设“十五五”规划》的通知(发改能源〔2026〕942号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于印发《新型电力系统建设“十五五”规划》的通知(发改能源〔2026〕942号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:28:46+00:00",
+  "content_hash": "3b14c32fb07b35c4835cde2627feb2233dc2db9acc7ec22887b8fc6a02f0cd1c",
+  "importance": "normal",
+  "policy_id": "bc620246f83149f0b9a3",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "产业方向",
+    "创业机会",
+    "就业与城市",
+    "宏观环境"
+  ]
+}

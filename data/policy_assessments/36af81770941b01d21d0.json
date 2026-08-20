@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于开展2026年全国节能宣传周和全国低碳日活动的通知(发改环资〔2026〕664号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于开展2026年全国节能宣传周和全国低碳日活动的通知(发改环资〔2026〕664号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于开展2026年全国节能宣传周和全国低碳日活动的通知(发改环资〔2026〕664号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "b91d390b17335b3b18bcfc44f3aec0b4326c7abd5c91419bf96f5e320e433035",
+  "importance": "normal",
+  "policy_id": "36af81770941b01d21d0",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "产业方向",
+    "宏观环境"
+  ]
+}

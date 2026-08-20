@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "中国人民银行关于《大额存单管理办法》公开征求意见的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；目前为征求意见稿；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行征求意见《中国人民银行关于《大额存单管理办法》公开征求意见的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "征求意见：中国人民银行关于《大额存单管理办法》公开征求意见的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T10:30:25+00:00",
+  "content_hash": "38d85f2c7970a9d587b34b04a444bc24edcc4b998e54bab7b1b07bc387ac451d",
+  "importance": "normal",
+  "policy_id": "43c7f96a5e6242d90cc3",
+  "relevant": true,
+  "score": 65,
+  "topics": [
+    "就业与城市",
+    "宏观环境"
+  ]
+}
