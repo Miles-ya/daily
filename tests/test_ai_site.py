@@ -67,7 +67,7 @@ def test_base_path_build(tmp_path):
     assert (output / "events/e/index.html").exists()
     assert (output / "archive/index.html").exists()
     assert "工业生产保持增长" in html
-    assert "今日全部文件 · 1" in html
+    assert "1 份文件 · 全部完成解析" in html
     assert "宏观运行概览" in html
     assert "首页" not in html
     assert (output / "economy/2026-08-19/index.html").exists()
