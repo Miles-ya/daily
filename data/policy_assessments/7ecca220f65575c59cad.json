@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第35号 公布对原产于印度的进口单模光纤所适用反倾销措施的期终复审裁定"
+      "[政策原文]"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第35号 公布对原产于印度的进口单模光纤所适用反倾销措施的期终复审裁定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《[政策原文]》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第35号 公布对原产于印度的进口单模光纤所适用反倾销措施的期终复审裁定"
+      "正式发布：[政策原文]"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-08-20T10:30:25+00:00",
-  "content_hash": "5d30fda1497641f31a5aecb9614bae83362da09e6d88c9e411c294d32b194573",
+  "assessed_at": "2026-08-20T11:15:16+00:00",
+  "content_hash": "a377a62b81a057ae976de1e119bafde16eb2f48979f720676cca775284202977",
   "importance": "normal",
-  "policy_id": "a81d79a29b77c9ae8e51",
+  "policy_id": "7ecca220f65575c59cad",
   "relevant": true,
   "score": 58,
   "topics": [

@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "财政部等五部门关于口岸进境免税店有关事宜的通知"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "财政部正式发布《财政部等五部门关于口岸进境免税店有关事宜的通知》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：财政部等五部门关于口岸进境免税店有关事宜的通知"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-20T11:15:16+00:00",
+  "content_hash": "513f1607bb6c4e0a6dbd43f5d71c2cac1d1ced3ddaf0dc20d76ad9ffd7cf509d",
+  "importance": "normal",
+  "policy_id": "0c8255c285a6cd5d9af1",
+  "relevant": true,
+  "score": 58,
+  "topics": [
+    "资金流向",
+    "就业与城市"
+  ]
+}

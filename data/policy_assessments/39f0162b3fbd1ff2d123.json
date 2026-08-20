@@ -3,11 +3,9 @@
     "affected_industries": [],
     "city_signals": [],
     "confidence": 0.35,
-    "deadlines": [
-      "2026-08-05"
-    ],
+    "deadlines": [],
     "evidence": [
-      "中华人民共和国商务部令二〇二六年第3号 关于对美国合规性测试公司采取反制措施的决定"
+      "商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -18,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《中华人民共和国商务部令二〇二六年第3号 关于对美国合规性测试公司采取反制措施的决定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -26,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：中华人民共和国商务部令二〇二六年第3号 关于对美国合规性测试公司采取反制措施的决定"
+      "正式发布：商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-08-20T10:30:25+00:00",
-  "content_hash": "18d67ea6f06d6fe137a61cf64d49603323460ef6ca33d66334fb0c8a042fd0b3",
+  "assessed_at": "2026-08-20T11:15:16+00:00",
+  "content_hash": "e1f59a1dd49f554b718a7b547a5d8496221697d92cc636d74aac5de18ecfa2d5",
   "importance": "normal",
-  "policy_id": "5230105381a84cf01f85",
+  "policy_id": "39f0162b3fbd1ff2d123",
   "relevant": true,
   "score": 43,
   "topics": [
