@@ -62,7 +62,7 @@ def test_base_path_build(tmp_path):
     document_analyses = {"d": {"document_id": "d", "content_hash": "hash", "analysis": analysis}}
     build_site(root, output, "/daily/", [doc], [event], [digest], [], document_analyses=document_analyses, report_date="2026-08-19")
     html = (output / "index.html").read_text(encoding="utf-8")
-    assert 'href="/daily/assets/style.css"' in html
+    assert 'href="/daily/assets/style.css?v=' in html
     assert 'href="/assets/' not in html
     assert (output / "events/e/index.html").exists()
     assert (output / "archive/index.html").exists()

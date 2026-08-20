@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import hashlib
 import shutil
 from datetime import date, datetime, timedelta
 from pathlib import Path
@@ -51,7 +52,17 @@ def build_site(root: Path, output: Path, base_url: str, documents: list[dict], e
     output.mkdir(parents=True)
     env = Environment(loader=FileSystemLoader(root / "daily/site/templates"), autoescape=select_autoescape(), trim_blocks=True, lstrip_blocks=True)
     env.globals["base_url"] = base_url
-    env.globals["asset"] = lambda path: base_url + path.lstrip("/")
+    static_root = root / "daily/site/templates"
+    asset_versions = {name: hashlib.sha256((static_root / name).read_bytes()).hexdigest()[:10]
+                      for name in ("style.css", "app.js", "favicon.svg")}
+
+    def asset(path: str) -> str:
+        normalized = path.lstrip("/")
+        name = Path(normalized).name
+        suffix = f"?v={asset_versions[name]}" if normalized.startswith("assets/") and name in asset_versions else ""
+        return base_url + normalized + suffix
+
+    env.globals["asset"] = asset
     env.globals["document_type_name"] = lambda value: DOCUMENT_TYPES.get(value, "统计资料")
     documents_by_id = {document["id"]: document for document in documents}
     document_analyses = document_analyses or {}
