@@ -52,6 +52,7 @@ class DeepSeekAnalyzer(AnalyzerProvider):
             path.write_text(json.dumps({"analysis": analysis, "usage": {"migrated": True, "model": self.model}}, ensure_ascii=False, indent=2), encoding="utf-8")
 
     def analyze(self, event: EconomicEvent, documents: list[dict]) -> dict:
+        self.last_usage = {}
         if not self.enabled:
             return {}
         event_input = event.to_dict()
@@ -96,7 +97,10 @@ class DeepSeekAnalyzer(AnalyzerProvider):
                         continue
                     chunk_buffer = b""
                     usage = chunk.get("usage") or usage
-                    choice = chunk.get("choices", [{}])[0]
+                    # OpenAI-compatible gateways may emit usage-only chunks
+                    # with an explicitly empty choices list near stream end.
+                    choices = chunk.get("choices") or []
+                    choice = choices[0] if choices else {}
                     finish_reason = choice.get("finish_reason") or finish_reason
                     delta = choice.get("delta", {})
                     if delta.get("content"):

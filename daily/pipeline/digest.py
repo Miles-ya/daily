@@ -1,26 +1,39 @@
 from __future__ import annotations
 
-from daily.models import EconomicEvent
+from daily.models import Document, EconomicEvent
 
 
-def build_digest(channel: str, run_date: str, events: list[EconomicEvent]) -> dict:
-    important = [event for event in events if event.featured and event.date == run_date][:5]
-    if not important:
-        important = [event for event in events if event.featured][:5]
-    if not important:
-        return {"channel": channel, "date": run_date, "one_sentence": "今日暂无重大经济数据或政策更新。",
-                "important_events": [], "temperature": None, "biggest_change": "数据不足，目前无法判断。",
-                "money_flow": {"confirmed": [], "inferred": []}, "industry_signals": [], "risks": [], "watch_next": []}
-    primary = important[0]
-    analyses = [event.analysis for event in important if event.analysis]
-    return {
-        "channel": channel, "date": run_date,
-        "one_sentence": (analyses[0].get("one_sentence") if analyses else f"今日重点关注：{primary.title}。"),
-        "important_events": [{"id": e.id, "title": e.title, "score": e.score, "summary": e.analysis.get("one_sentence", "")} for e in important],
-        "temperature": analyses[0].get("economic_temperature") if analyses else None,
-        "biggest_change": (analyses[0].get("overall_judgement") if analyses else "等待更多历史数据形成稳定比较。"),
-        "money_flow": analyses[0].get("money_flow", {"confirmed": [], "inferred": []}) if analyses else {"confirmed": [], "inferred": []},
-        "industry_signals": analyses[0].get("industry_signals", []) if analyses else [],
-        "risks": analyses[0].get("risks", []) if analyses else [],
-        "watch_next": analyses[0].get("watch_next", []) if analyses else [],
-    }
+def build_digest(channel: str, report_date: str, documents: list[Document], document_analyses: dict[str, dict],
+                 events: list[EconomicEvent], generated_on: str) -> dict:
+    dated_documents = [document for document in documents if document.channel == channel and document.publish_date == report_date]
+    dated_events = [event for event in events if event.channel == channel and event.date == report_date]
+    event_by_document = {document_id: event for event in dated_events for document_id in event.documents}
+    if not dated_documents:
+        return {"channel": channel, "date": report_date, "generated_on": generated_on, "status": "empty",
+                "one_sentence": "", "highlights": [], "documents": [], "sections": {}}
+    items = []
+    for document in dated_documents:
+        wrapper = document_analyses.get(document.id, {})
+        analysis = wrapper.get("analysis", {})
+        event = event_by_document.get(document.id)
+        items.append({"id": document.id, "title": document.title, "source_name": document.source_name,
+                      "document_type": document.document_type, "url": document.url, "content_hash": document.content_hash, "analysis": analysis,
+                      "attention_score": event.score if event else 0})
+    items.sort(key=lambda item: (item["attention_score"], bool(item["analysis"])), reverse=True)
+    complete = all(item["analysis"] for item in items)
+    primary_event = next((event for event in sorted(dated_events, key=lambda event: event.score, reverse=True) if event.analysis), None)
+    primary_analysis = primary_event.analysis if primary_event else next((item["analysis"] for item in items if item["analysis"]), {})
+    highlights = []
+    for item in items:
+        analysis = item["analysis"]
+        point = analysis.get("recommendation_reason") or analysis.get("overall_judgement")
+        if point and point not in highlights:
+            highlights.append(point)
+        if len(highlights) == 3:
+            break
+    return {"channel": channel, "date": report_date, "generated_on": generated_on,
+            "status": "published" if complete else "unavailable", "one_sentence": primary_analysis.get("one_sentence", ""),
+            "highlights": highlights, "documents": items,
+            "sections": {"overall_judgement": primary_analysis.get("overall_judgement", ""),
+                         "strong_signals": primary_analysis.get("strong_signals", []), "weak_signals": primary_analysis.get("weak_signals", []),
+                         "risks": primary_analysis.get("risks", []), "watch_next": primary_analysis.get("watch_next", [])}}

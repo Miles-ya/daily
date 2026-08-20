@@ -36,7 +36,8 @@ def test_fragmented_stream_is_reassembled(tmp_path, monkeypatch):
     class Response:
         def raise_for_status(self): pass
         def iter_lines(self, decode_unicode=False):
-            return iter([b"data: " + chunk[:150], chunk[150:], b"data: [DONE]"])
+            usage_only = json.dumps({"choices": [], "usage": {"total_tokens": 12}}).encode()
+            return iter([b"data: " + chunk[:150], chunk[150:], b"data: " + usage_only, b"data: [DONE]"])
     monkeypatch.setattr("daily.analyzers.deepseek.requests.post", lambda *args, **kwargs: Response())
     analyzer = DeepSeekAnalyzer(tmp_path, api_key="test")
     event = EconomicEvent("e", "economy", "title", "2026-08-17", "macro_release", "d", ["d"])
@@ -46,20 +47,31 @@ def test_fragmented_stream_is_reassembled(tmp_path, monkeypatch):
 def test_base_path_build(tmp_path):
     root = Path(__file__).parents[1]
     output = tmp_path / "site"
-    doc = {"id": "d", "url": "https://example.com", "title": "原文", "publish_date": None}
+    doc = {"id": "d", "channel": "economy", "url": "https://example.com", "title": "原文", "publish_date": "2026-08-19",
+           "source_name": "国家统计局", "document_type": "macro_overview", "tags": [], "content_hash": "hash"}
     event = {"id": "e", "channel": "economy", "title": "事件", "date": "2026-08-17", "event_type": "macro_release",
              "primary_document": "d", "documents": ["d"], "metrics": [], "official_interpretation": [], "analysis": {},
              "score": 70, "featured": True, "recommendation_reason": "重要", "tags": ["宏观"]}
-    digest = {"channel": "economy", "date": "2026-08-19", "one_sentence": "今日重点", "important_events": [],
-              "biggest_change": "暂无", "industry_signals": [], "risks": []}
-    build_site(root, output, "/daily/", [doc], [event], [digest], [])
+    analysis = {"one_sentence": "工业生产保持增长。", "overall_judgement": "当前数据表现平稳。",
+                "strong_signals": ["生产延续增长"], "weak_signals": [], "risks": [], "watch_next": [],
+                "recommendation_reason": "关注生产变化"}
+    digest = {"channel": "economy", "date": "2026-08-19", "generated_on": "2026-08-20T07:15:00+08:00",
+              "status": "published", "one_sentence": "工业生产保持增长。", "highlights": ["关注生产变化"],
+              "documents": [{**doc, "analysis": analysis, "attention_score": 70}],
+              "sections": {"overall_judgement": "当前数据表现平稳。", "strong_signals": [], "weak_signals": [], "risks": [], "watch_next": []}}
+    document_analyses = {"d": {"document_id": "d", "content_hash": "hash", "analysis": analysis}}
+    build_site(root, output, "/daily/", [doc], [event], [digest], [], document_analyses=document_analyses, report_date="2026-08-19")
     html = (output / "index.html").read_text(encoding="utf-8")
     assert 'href="/daily/assets/style.css"' in html
     assert 'href="/assets/' not in html
     assert (output / "events/e/index.html").exists()
     assert (output / "archive/index.html").exists()
-    assert 'id="date-2026-08-19"' in html
-    assert 'id="date-2026-08-17"' in html
-    assert "DAILY BRIEF" in html
-    assert "sidebar" not in html
+    assert "工业生产保持增长" in html
+    assert "今日全部文件 · 1" in html
+    assert "宏观运行概览" in html
+    assert "首页" not in html
+    assert (output / "economy/2026-08-19/index.html").exists()
+    assert (output / "economy/documents/d/index.html").exists()
+    assert (output / "ai/index.html").exists()
+    assert "今日暂无日报" in (output / "ai/index.html").read_text(encoding="utf-8")
     assert normalize_base_url("daily") == "/daily/"

@@ -1,6 +1,6 @@
 # Daily
 
-Daily 是一个 AI 驱动的公开信息情报流。V1 聚焦中国经济，只接入国家统计局，将公开资料自动抓取、去重、聚合为经济事件，提取可追溯指标，再生成精选信息流和每日经济摘要。
+Daily 是一个 AI 驱动的每日日报系统。V1 聚焦中国经济，只接入国家统计局，将公开资料自动抓取、去重、逐篇解析，再按发布日期汇总为当天的经济日报。
 
 它不是新闻搬运站。项目首先回答：今天真正发生了什么、哪些变化值得关注、与此前相比有什么不同。
 
@@ -11,9 +11,10 @@ Daily 是一个 AI 驱动的公开信息情报流。V1 聚焦中国经济，只�
 - 宏观总览、官方解读和发布会聚合为一个经济事件
 - 工业、消费、投资、民间投资、房地产、就业、CPI、PPI、外贸、服务业和能源指标提取
 - 本地历史序列、变化方向、透明经济评分、精选和热点
-- DeepSeek 结构化分析、JSON Schema 校验、失败重试、哈希缓存与无密钥降级
+- 每份 Document 独立完成 DeepSeek 结构化解析，再生成当天日报
+- JSON Schema 校验、失败重试、哈希缓存与无密钥降级
 - 兼容 `api.b.ai` 的流式 SSE 响应，在服务端完整组装 JSON 后再校验和缓存
-- 精选、全部动态、热点、日报、指标、详情、关于和前端本地搜索
+- 日期优先的日报、空白日、归档、逐文件解析、经济与 AI 模块化频道
 - GitHub Actions 每日自动更新和 GitHub Pages 独立部署
 
 ## 本地运行
@@ -38,7 +39,7 @@ SITE_BASE_URL=/ .venv/bin/daily pipeline --no-ai --max-documents 10
 .venv/bin/daily pipeline --no-ai --url 'https://www.stats.gov.cn/sj/zxfb/202608/t20260817_1965056.html'
 ```
 
-重复运行是幂等的：Document 使用规范 URL 稳定标识，正文哈希参与去重；Event 使用统计期稳定标识；DeepSeek 只分析内容未命中缓存的事件。
+未指定 `--date` 时，系统按北京时间生成并展示昨天的日报；当天没有新资料就保留为空，不会拿其他日期的内容回填。重复运行是幂等的：Document 使用规范 URL 稳定标识，正文哈希参与去重；Event 使用统计期稳定标识；DeepSeek 只解析未命中缓存的文件和事件。
 
 ## 配置与 Secrets
 
@@ -55,7 +56,7 @@ Telegram 的 `TELEGRAM_BOT_TOKEN`、`TELEGRAM_CHAT_ID` 和 `ENABLE_TELEGRAM` 已
 
 事实、官方解释和 AI 分析分层展示。指标保留 `source_document` 和 `source_text`；没有发布时间时 `publish_time` 保持 `null`；历史比较只读取 `data/metrics/series.json`。AI 不得补造数字，资金流向无明确证据时必须留空或标记为推测。
 
-数据按稳定 ID 或日期保存在 `data/`，网站产物在 `site-output/`（不提交）。每次运行的抓取或分析错误记录在 `data/logs/YYYY-MM-DD.json`，单页或 AI 失败不会阻止其余网站生成。
+数据按稳定 ID 或日期保存在 `data/`，逐文件结果位于 `data/document_analyses/`，网站产物在 `site-output/`（不提交）。每次运行的抓取或分析错误记录在 `data/logs/YYYY-MM-DD.json`；某一天只要还有文件未解析，该日日报就保持“尚未完成”，避免发布残缺汇总。
 
 ## GitHub Pages 设置
 
