@@ -1,0 +1,34 @@
+{
+  "cache_pruned": 7,
+  "changed": [
+    "358b52eb2325b8e13857",
+    "a81d79a29b77c9ae8e51",
+    "dd452f4ce3f402d559ab",
+    "b34046d4034f5f27dff9",
+    "5230105381a84cf01f85",
+    "1e6c7c1b1ae43ca35d08",
+    "16ff960a54335c11d2d8"
+  ],
+  "discovered": 61,
+  "errors": [
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://szs.mof.gov.cn/zhengcefabu/202607/t20260728_3994425.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://szs.mof.gov.cn/zhengcefabu/202607/t20260728_3994425.htm"
+    },
+    {
+      "error": "请求失败: 住房城乡建设部: HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/index.html (Caused by NameResolutionError(\"HTTPSConnection(host='www.mohurd.gov.cn', port=443): Failed to resolve 'www.mohurd.gov.cn' ([Errno -3] Temporary failure in name resolution)\"))",
+      "source": "mohurd",
+      "stage": "discover"
+    },
+    {
+      "error": "DeepSeek 分析失败: Unterminated string starting at: line 86 column 5 (char 3132)",
+      "policy": "97a190c208cf31571d67",
+      "stage": "analyze"
+    }
+  ],
+  "generated_on": "2026-08-21T17:47:02+08:00",
+  "pruned": 0,
+  "retention_days": 90
+}
