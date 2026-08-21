@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定"
+      "商务部公告2026年第34号 公布加强无人机相关两用物项对美国出口管制"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第34号 公布加强无人机相关两用物项对美国出口管制》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定"
+      "正式发布：商务部公告2026年第34号 公布加强无人机相关两用物项对美国出口管制"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-08-20T11:15:16+00:00",
-  "content_hash": "e1f59a1dd49f554b718a7b547a5d8496221697d92cc636d74aac5de18ecfa2d5",
+  "assessed_at": "2026-08-21T02:01:59+00:00",
+  "content_hash": "328c0e57c55e6282db6017500ceff28131ab1130cddab4af45c8f7d2103838f4",
   "importance": "normal",
-  "policy_id": "39f0162b3fbd1ff2d123",
+  "policy_id": "1e6c7c1b1ae43ca35d08",
   "relevant": true,
   "score": 43,
   "topics": [

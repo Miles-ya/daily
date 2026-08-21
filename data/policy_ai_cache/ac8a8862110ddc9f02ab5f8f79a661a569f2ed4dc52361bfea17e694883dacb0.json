@@ -1,0 +1,52 @@
+{
+  "analysis": {
+    "one_sentence": "商务部等7部门发布了更新后的《鼓励进口服务目录》，旨在主动扩大优质服务进口，但未公布具体目录内容。",
+    "what_changed": [
+      "2026年2月10日发布新版《鼓励进口服务目录》，同时废止2019年第14号公告"
+    ],
+    "policy_tools": [
+      "鼓励进口服务目录（目录调整本身作为政策工具）"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "原文未提及任何财政资金、专项债、政府采购、产业基金、补贴、信贷或具体金额"
+      ]
+    },
+    "affected_industries": [],
+    "opportunities_1_3y": [],
+    "student_signals": [],
+    "city_signals": [],
+    "macro_signals": [
+      "原文明确“主动扩大优质服务进口”的决策部署，预示着服务贸易进口将进一步开放"
+    ],
+    "risks": [
+      "原文未说明具体目录内容，无法判断哪些领域受限或被鼓励，企业需等待后续细则"
+    ],
+    "deadlines": [
+      "2026年2月10日（发文日期），旧目录同时废止，新目录即日生效"
+    ],
+    "evidence": [
+      "原文标题及正文：商务部等7部门公告2026年第8号公布《鼓励进口服务目录》",
+      "原文：为贯彻落实党中央、国务院关于主动扩大优质服务进口的有关决策部署",
+      "原文：商务部、国家发展改革委、财政部、生态环境部、国家知识产权局2019年第14号公告同时废止"
+    ],
+    "importance": "normal",
+    "importance_reason": "该政策仅为目录更新，未提供具体进口服务清单，短期影响有限，需结合后续细则评估",
+    "confidence": 0.6
+  },
+  "usage": {
+    "prompt_tokens": 1861,
+    "completion_tokens": 826,
+    "total_tokens": 2687,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 432
+    },
+    "duration_seconds": 10.167,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop"
+  }
+}

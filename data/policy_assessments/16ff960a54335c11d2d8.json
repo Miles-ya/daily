@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "[政策原文]"
+      "商务部公告2026年第33号 公布对相关进口打印复印办公设备发起对外贸易国家安全立案调查"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《[政策原文]》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第33号 公布对相关进口打印复印办公设备发起对外贸易国家安全立案调查》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：[政策原文]"
+      "正式发布：商务部公告2026年第33号 公布对相关进口打印复印办公设备发起对外贸易国家安全立案调查"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-08-20T11:15:16+00:00",
-  "content_hash": "a377a62b81a057ae976de1e119bafde16eb2f48979f720676cca775284202977",
+  "assessed_at": "2026-08-21T02:01:59+00:00",
+  "content_hash": "b6a61757bc0ec43d1853c73e8cd9e3583340db8068b79929efaef1229da7a33d",
   "importance": "normal",
-  "policy_id": "7ecca220f65575c59cad",
+  "policy_id": "16ff960a54335c11d2d8",
   "relevant": true,
   "score": 58,
   "topics": [
