@@ -3,13 +3,19 @@
   "$id": "personal-brief-v1",
   "type": "object",
   "additionalProperties": false,
-  "required": ["why_for_me", "action_today", "continue_watching", "new_directions", "suggested_judgement_changes", "ignore_reason"],
+  "required": ["headline", "what_happened", "resource_flow", "market_demand", "beneficiaries", "entry_point", "relevance_score", "relevance_reason", "decision", "action_items", "realert_condition", "window"],
   "properties": {
-    "why_for_me": {"type": "string"},
-    "action_today": {"type": "string"},
-    "continue_watching": {"type": "array", "items": {"type": "string"}},
-    "new_directions": {"type": "array", "items": {"type": "string"}},
-    "suggested_judgement_changes": {"type": "array", "items": {"type": "string"}},
-    "ignore_reason": {"type": "string"}
+    "headline": {"type": "string", "maxLength": 36},
+    "what_happened": {"type": "string", "maxLength": 80},
+    "resource_flow": {"type": "string", "maxLength": 100},
+    "market_demand": {"type": "string", "maxLength": 100},
+    "beneficiaries": {"type": "array", "maxItems": 3, "items": {"type": "string", "maxLength": 40}},
+    "entry_point": {"type": "string", "maxLength": 100},
+    "relevance_score": {"type": "integer", "minimum": 0, "maximum": 5},
+    "relevance_reason": {"type": "string", "maxLength": 100},
+    "decision": {"type": "string", "enum": ["立即行动", "值得研究", "持续观察", "无需关注"]},
+    "action_items": {"type": "array", "maxItems": 3, "items": {"type": "string", "maxLength": 80}},
+    "realert_condition": {"type": "string", "maxLength": 100},
+    "window": {"type": "string", "maxLength": 60}
   }
 }

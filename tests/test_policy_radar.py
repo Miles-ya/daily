@@ -5,7 +5,7 @@ from pathlib import Path
 from daily.collectors.base import DiscoveredItem
 from daily.collectors.policy import GenericPolicyCollector
 from daily.models import PolicyDocument
-from daily.notifications.policy import _chunks, _is_recent
+from daily.notifications.policy import _alert_message, _delivery_tier, _is_recent, _signal_message
 from daily.pipeline.policy import classify_status, detect_topics, is_policy_candidate, score_policy
 from daily.policy_runner import _is_retained
 from daily.site.policy_builder import build_policy_site
@@ -47,11 +47,43 @@ def test_policy_filter_topics_and_score():
     assert detect_topics("关于普通行政事项的通知", "会议在北京召开，其他内容与主题无关。") == []
 
 
-def test_telegram_batches_stay_within_limit():
-    meta = (("identity", {"id": "p1"}, {"content_hash": "hash"}), "政策更新" * 600)
-    batches = list(_chunks([meta, meta]))
-    assert len(batches) == 2
-    assert all(len(message) <= 3900 for message, _ in batches)
+def personal_brief(score=1, decision="无需关注", actions=None):
+    return {
+        "headline": "财政贴息政策扩围", "what_happened": "财政继续降低消费和小微企业融资成本。",
+        "resource_flow": "贴息流向消费者与小微企业", "market_demand": "融资需求",
+        "beneficiaries": ["小微企业"], "entry_point": "目前没有直接切入点",
+        "relevance_score": score, "relevance_reason": "与你当前 AI 和低成本创业方向关系较弱。",
+        "decision": decision, "action_items": actions or [],
+        "realert_condition": "出现面向 AI 或数字化创业的具体补贴时再提醒。", "window": "",
+    }
+
+
+def test_telegram_separates_national_importance_from_personal_relevance():
+    item = policy().to_dict()
+    brief = personal_brief()
+    assert _delivery_tier(assessment(), brief) == "signal"
+    message = _signal_message(item, assessment(), brief, "https://example.com/daily/")
+    assert "国家重要" in message
+    assert "与我低相关" in message
+    assert "行动：无" in message
+    assert "持续观察" not in message
+    assert item["title"] not in message
+    assert len(message) < 500
+
+
+def test_telegram_only_strongly_alerts_actionable_high_relevance():
+    item = policy().to_dict()
+    brief = personal_brief(5, "立即行动", ["核对申报资格", "准备项目材料"])
+    assert _delivery_tier(assessment(), brief) == "alert"
+    message = _alert_message(item, brief, "https://example.com/daily/")
+    assert "🚨" in message
+    assert "1. 核对申报资格" in message
+    assert "2. 准备项目材料" in message
+
+
+def test_telegram_suppresses_irrelevant_updates():
+    brief = {**personal_brief(0), "realert_condition": ""}
+    assert _delivery_tier(assessment(), brief) == "silent"
 
 
 def test_telegram_only_sends_recent_policies():
