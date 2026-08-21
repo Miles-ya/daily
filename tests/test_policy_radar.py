@@ -7,6 +7,7 @@ from daily.collectors.policy import GenericPolicyCollector
 from daily.models import PolicyDocument
 from daily.notifications.policy import _chunks, _is_recent
 from daily.pipeline.policy import classify_status, detect_topics, is_policy_candidate, score_policy
+from daily.policy_runner import _is_retained
 from daily.site.policy_builder import build_policy_site
 
 
@@ -58,6 +59,17 @@ def test_telegram_only_sends_recent_policies():
     assert _is_recent({"publish_date": "2026-08-18"}, today)
     assert not _is_recent({"publish_date": "2026-08-16"}, today)
     assert not _is_recent({"publish_date": ""}, today)
+
+
+def test_policy_retention_keeps_only_recent_90_days():
+    today = date(2026, 8, 20)
+    assert _is_retained("2026-08-20", today, 90)
+    assert _is_retained("2026-05-22", today, 90)
+    assert not _is_retained("2026-05-21", today, 90)
+    assert not _is_retained("2017-11-13", today, 90)
+    assert not _is_retained("", today, 90)
+    assert not _is_retained("日期未知", today, 90)
+    assert not _is_retained("2026-08-21", today, 90)
 
 
 def test_generic_policy_collector(monkeypatch):

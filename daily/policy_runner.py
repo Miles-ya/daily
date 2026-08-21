@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 import logging
 import re
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -25,6 +25,20 @@ def _load_records(directory: Path, factory) -> list:
     if not directory.exists():
         return []
     return [factory(json.loads(path.read_text(encoding="utf-8"))) for path in sorted(directory.glob("*.json"))]
+
+
+def _retention_cutoff(today: date, retention_days: int) -> date:
+    return today - timedelta(days=max(1, retention_days))
+
+
+def _is_retained(publish_date: str | None, today: date, retention_days: int) -> bool:
+    if not publish_date:
+        return False
+    try:
+        published = date.fromisoformat(publish_date)
+    except ValueError:
+        return False
+    return _retention_cutoff(today, retention_days) <= published <= today
 
 
 def _fallback_analysis(policy: PolicyDocument, importance: str, reason: str) -> dict:
@@ -79,6 +93,27 @@ def _prune_orphan_records(root: Path, policy_ids: set[str]) -> None:
                 path.unlink()
 
 
+def _analysis_event(policy: PolicyDocument) -> EconomicEvent:
+    return EconomicEvent(
+        id=f"policy-{policy.id}", channel="policy", title=policy.title,
+        date=policy.publish_date or "", event_type="policy", primary_document=policy.id,
+        documents=[policy.id], tags=policy.topics,
+    )
+
+
+def _prune_ai_cache(analyzer: DeepSeekAnalyzer, policies: list[PolicyDocument]) -> int:
+    keep = {
+        analyzer._cache_path(_analysis_event(policy), [policy.to_dict()]).name
+        for policy in policies
+    }
+    removed = 0
+    for path in analyzer.cache_dir.glob("*.json"):
+        if path.name not in keep:
+            path.unlink()
+            removed += 1
+    return removed
+
+
 def load_policy_data(root: Path) -> tuple[list[dict], dict[str, dict]]:
     policies = [item.to_dict() for item in _load_records(root / "data/policies", PolicyDocument.from_dict)]
     assessments = {}
@@ -93,6 +128,11 @@ def load_policy_data(root: Path) -> tuple[list[dict], dict[str, dict]]:
 def build_policy_output(root: Path) -> dict:
     config = load_config(root)
     policies, assessments = load_policy_data(root)
+    today = datetime.now(ZoneInfo("Asia/Shanghai")).date()
+    retention_days = config["policy"].get("retention_days", 90)
+    policies = [item for item in policies if _is_retained(item.get("publish_date"), today, retention_days)]
+    retained_ids = {item["id"] for item in policies}
+    assessments = {key: value for key, value in assessments.items() if key in retained_ids}
     build_policy_site(root, root / "site-output", config["site"]["base_url"], policies, assessments)
     return {"site": str(root / "site-output"), "policies": len(policies)}
 
@@ -101,7 +141,9 @@ def run_policy_pipeline(root: Path, online: bool = True, enable_ai: bool = True)
     now = datetime.now(ZoneInfo("Asia/Shanghai")).replace(microsecond=0)
     config = load_config(root)
     storage = Storage(root / "data")
-    existing = _load_records(root / "data/policies", PolicyDocument.from_dict)
+    retention_days = config["policy"].get("retention_days", 90)
+    existing_records = _load_records(root / "data/policies", PolicyDocument.from_dict)
+    existing = [item for item in existing_records if _is_retained(item.publish_date, now.date(), retention_days)]
     old_signatures = {item.id: (item.content_hash, item.publish_date, item.policy_status, tuple(item.topics)) for item in existing}
     existing_by_url = {item.canonical_url: item for item in existing}
     fetched: list[PolicyDocument] = []
@@ -117,6 +159,10 @@ def run_policy_pipeline(root: Path, online: bool = True, enable_ai: bool = True)
             )
             try:
                 items = collector.discover()
+                items = [
+                    item for item in items
+                    if not item.publish_date or _is_retained(item.publish_date, now.date(), retention_days)
+                ]
                 discovered_count += len(items)
             except Exception as exc:
                 errors.append({"stage": "discover", "source": source_id, "error": str(exc)})
@@ -131,12 +177,14 @@ def run_policy_pipeline(root: Path, online: bool = True, enable_ai: bool = True)
                 try:
                     policy = collector.collect(item)
                     policy.topics = detect_topics(policy.title, policy.content)
-                    if policy.topics:
+                    if policy.topics and _is_retained(policy.publish_date, now.date(), retention_days):
                         fetched.append(policy)
                 except Exception as exc:
                     errors.append({"stage": "collect", "source": source_id, "url": item.url, "error": str(exc)})
     policies = _deduplicate(existing + fetched)
     _repair_url_dates(policies)
+    policies = [item for item in policies if _is_retained(item.publish_date, now.date(), retention_days)]
+    policies.sort(key=lambda item: (item.publish_date or "", item.crawl_time), reverse=True)
     for policy in policies:
         policy.topics = detect_topics(policy.title, policy.content)
     changed = [item for item in policies if old_signatures.get(item.id) != (item.content_hash, item.publish_date, item.policy_status, tuple(item.topics))]
@@ -151,7 +199,11 @@ def run_policy_pipeline(root: Path, online: bool = True, enable_ai: bool = True)
         schema_path=root / "daily/schemas/policy-analysis-v1.json",
         system_prompt=POLICY_SYSTEM_PROMPT,
     )
-    assessments: dict[str, dict] = dict(existing_assessments)
+    cache_pruned = _prune_ai_cache(analyzer, policies)
+    retained_ids = {item.id for item in policies}
+    assessments: dict[str, dict] = {
+        key: value for key, value in existing_assessments.items() if key in retained_ids
+    }
     analysis_budget = config["policy"].get("max_ai_per_run", 12)
     analysis_calls = 0
     assessment_updates: list[str] = []
@@ -175,11 +227,7 @@ def run_policy_pipeline(root: Path, online: bool = True, enable_ai: bool = True)
         did_analyze = False
         try:
             if enable_ai and analyzer.enabled and analysis_calls < analysis_budget:
-                event = EconomicEvent(
-                    id=f"policy-{policy.id}", channel="policy", title=policy.title,
-                    date=policy.publish_date or "", event_type="policy", primary_document=policy.id,
-                    documents=[policy.id], tags=policy.topics,
-                )
+                event = _analysis_event(policy)
                 analysis = analyzer.analyze(event, [policy.to_dict()])
                 analysis_calls += 1
                 did_analyze = bool(analysis)
@@ -200,9 +248,14 @@ def run_policy_pipeline(root: Path, online: bool = True, enable_ai: bool = True)
         storage.write_json(policy.to_dict(), "policies", f"{policy.id}.json")
     for assessment in assessments.values():
         storage.write_json(assessment, "policy_assessments", f"{assessment['policy_id']}.json")
-    _prune_orphan_records(root, {policy.id for policy in policies})
+    _prune_orphan_records(root, retained_ids)
     storage.write_json(
-        {"generated_on": now.isoformat(), "discovered": discovered_count, "changed": [item.id for item in changed], "errors": errors},
+        {
+            "generated_on": now.isoformat(), "discovered": discovered_count,
+            "changed": [item.id for item in changed], "retention_days": retention_days,
+            "pruned": len(existing_records) - len(existing), "cache_pruned": cache_pruned,
+            "errors": errors,
+        },
         "policy_logs", f"{now.date().isoformat()}-{now.strftime('%H%M')}.json",
     )
     build_policy_site(

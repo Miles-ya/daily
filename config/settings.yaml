@@ -8,6 +8,7 @@ pipeline:
   featured_score: 65
   breaking_score: 90
 policy:
+  retention_days: 90
   refresh_latest: 3
   initial_backfill_per_source: 5
   max_content_chars: 60000
