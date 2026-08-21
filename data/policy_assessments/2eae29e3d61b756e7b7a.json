@@ -1,0 +1,44 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2026-08-01"
+    ],
+    "evidence": [
+      "财政部等三部门联合发文部署进一步做好财政金融协同促内需政策有关工作"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "important",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "财政部正式发布《财政部等三部门联合发文部署进一步做好财政金融协同促内需政策有关工作》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：财政部等三部门联合发文部署进一步做好财政金融协同促内需政策有关工作"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-08-21T04:58:54+00:00",
+  "content_hash": "76a6cf58789d2b98e29085d9d61e0e1afda67605fba01ebfaa52e1abcf3fa182",
+  "importance": "important",
+  "policy_id": "2eae29e3d61b756e7b7a",
+  "relevant": true,
+  "score": 73,
+  "topics": [
+    "资金流向",
+    "创业机会",
+    "宏观环境"
+  ]
+}

@@ -7,7 +7,7 @@
       "2026-08-05"
     ],
     "evidence": [
-      "中华人民共和国商务部令二〇二六年第3号 关于对美国合规性测试公司采取反制措施的决定"
+      "中华人民共和国商务部令二〇二六年第2号 关于对应用DNA科学公司等6家美国实体采取反制措施的决定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -18,7 +18,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《中华人民共和国商务部令二〇二六年第3号 关于对美国合规性测试公司采取反制措施的决定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《中华人民共和国商务部令二〇二六年第2号 关于对应用DNA科学公司等6家美国实体采取反制措施的决定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -26,14 +26,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：中华人民共和国商务部令二〇二六年第3号 关于对美国合规性测试公司采取反制措施的决定"
+      "正式发布：中华人民共和国商务部令二〇二六年第2号 关于对应用DNA科学公司等6家美国实体采取反制措施的决定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-08-21T03:20:52+00:00",
-  "content_hash": "fe34324002598dd106df9e11d7cfbae25101942bb4c6bb4f6b56c84c0d51761b",
+  "assessed_at": "2026-08-21T04:58:54+00:00",
+  "content_hash": "f739807ca8ccbaeb9ca39aa399dcb0ec713775aadd8d925234e77d185aa85421",
   "importance": "normal",
-  "policy_id": "41767e5154b03e9b878c",
+  "policy_id": "b34046d4034f5f27dff9",
   "relevant": true,
   "score": 43,
   "topics": [
