@@ -1,0 +1,57 @@
+{
+  "analysis": {
+    "one_sentence": "商务部禁止境内组织和个人与美国合规性测试公司进行任何交易或合作，以反制其协助FCC损害中方权益。",
+    "what_changed": [
+      "美国合规性测试公司被列入反制清单，禁止境内组织和个人与其进行交易、合作等活动。"
+    ],
+    "policy_tools": [
+      "反制清单",
+      "禁止交易、合作"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "原文未说明任何资金流向。"
+      ]
+    },
+    "affected_industries": [
+      "通信设备测试认证服务（AI推测：因该公司业务涉及FCC合规测试，但原文未明确提及行业）"
+    ],
+    "opportunities_1_3y": [],
+    "student_signals": [
+      "原文未涉及学生相关信号。"
+    ],
+    "city_signals": [],
+    "macro_signals": [
+      "中美科技竞争持续，反制措施常态化，可能影响跨国合规测试业务。"
+    ],
+    "risks": [
+      "境内企业若与该公司有未公开的业务往来，可能面临违规风险。",
+      "中美合规测试合作可能进一步受阻。"
+    ],
+    "deadlines": [
+      "2026年8月5日起施行。"
+    ],
+    "evidence": [
+      "商务部令2026年第3号将美国合规性测试公司列入反制清单，禁止境内组织、个人与其进行有关交易、合作等活动。",
+      "依据《反外国制裁法》第三条、第四条、第六条、第九条、第十条、第十五条及实施规定。"
+    ],
+    "importance": "normal",
+    "importance_reason": "仅针对单一企业，不涉及行业性政策调整或资金资源分配，影响范围有限。",
+    "confidence": 1
+  },
+  "usage": {
+    "prompt_tokens": 2762,
+    "completion_tokens": 822,
+    "total_tokens": 3584,
+    "prompt_tokens_details": {
+      "cached_tokens": 512
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 422
+    },
+    "duration_seconds": 10.077,
+    "model": "deepseek-v4-flash",
+    "finish_reason": "stop"
+  }
+}
