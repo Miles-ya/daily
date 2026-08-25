@@ -1,0 +1,23 @@
+{
+  "cache_pruned": 6,
+  "changed": [
+    "358b52eb2325b8e13857",
+    "a81d79a29b77c9ae8e51",
+    "dd452f4ce3f402d559ab",
+    "b34046d4034f5f27dff9",
+    "5230105381a84cf01f85",
+    "1e6c7c1b1ae43ca35d08",
+    "16ff960a54335c11d2d8"
+  ],
+  "discovered": 60,
+  "errors": [
+    {
+      "error": "请求失败: 住房城乡建设部: HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/index.html (Caused by NameResolutionError(\"HTTPSConnection(host='www.mohurd.gov.cn', port=443): Failed to resolve 'www.mohurd.gov.cn' ([Errno -3] Temporary failure in name resolution)\"))",
+      "source": "mohurd",
+      "stage": "discover"
+    }
+  ],
+  "generated_on": "2026-08-25T13:39:39+08:00",
+  "pruned": 0,
+  "retention_days": 90
+}
