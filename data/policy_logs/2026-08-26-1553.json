@@ -1,0 +1,35 @@
+{
+  "cache_pruned": 7,
+  "changed": [
+    "72361149acd130257ade",
+    "603fd8be72162567ad2c",
+    "39f0162b3fbd1ff2d123",
+    "e2ba4b956327b1f2b4b7",
+    "41767e5154b03e9b878c",
+    "6b1073f7f9e01fb61dcc",
+    "08564811d92ecf11226d"
+  ],
+  "discovered": 60,
+  "errors": [
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://jrs.mof.gov.cn/zhengcefabu/phjr/202608/t20260820_3995853.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://jrs.mof.gov.cn/zhengcefabu/phjr/202608/t20260820_3995853.htm"
+    },
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://jrs.mof.gov.cn/zhengcefabu/gszl/202607/t20260731_3994642.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://jrs.mof.gov.cn/zhengcefabu/gszl/202607/t20260731_3994642.htm"
+    },
+    {
+      "error": "请求失败: 住房城乡建设部: HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/index.html (Caused by NameResolutionError(\"HTTPSConnection(host='www.mohurd.gov.cn', port=443): Failed to resolve 'www.mohurd.gov.cn' ([Errno -3] Temporary failure in name resolution)\"))",
+      "source": "mohurd",
+      "stage": "discover"
+    }
+  ],
+  "generated_on": "2026-08-26T15:53:31+08:00",
+  "pruned": 0,
+  "retention_days": 90
+}
