@@ -16,6 +16,11 @@
     "72361149acd130257ade:fe83279a201912ec672ab561475656875b9c6a1151a9aa90d874cd03496d013c": {
       "content_hash": "fe83279a201912ec672ab561475656875b9c6a1151a9aa90d874cd03496d013c",
       "policy_id": "72361149acd130257ade"
+    },
+    "b13bc41860d37fa2fc97:a9204aa214e3c6dfda362be4dc1ff454d6d115b7db250d29fb2f918341acce09": {
+      "content_hash": "a9204aa214e3c6dfda362be4dc1ff454d6d115b7db250d29fb2f918341acce09",
+      "policy_id": "b13bc41860d37fa2fc97",
+      "status": "signal"
     }
   }
 }
