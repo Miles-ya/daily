@@ -1,0 +1,70 @@
+{
+  "cache_pruned": 0,
+  "changed": [
+    "1afa677a601bae7cebe3",
+    "2c079ea30d544bdbe8d6",
+    "358b52eb2325b8e13857",
+    "a81d79a29b77c9ae8e51",
+    "dd452f4ce3f402d559ab",
+    "1e6c7c1b1ae43ca35d08"
+  ],
+  "discovered": 57,
+  "errors": [
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://jkw.mof.gov.cn/zhengcefabu/202609/t20260901_3996425.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://jkw.mof.gov.cn/zhengcefabu/202609/t20260901_3996425.htm"
+    },
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://kjs.mof.gov.cn/zhengcefabu/202608/t20260827_3996207.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://kjs.mof.gov.cn/zhengcefabu/202608/t20260827_3996207.htm"
+    },
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://jrs.mof.gov.cn/zhengcefabu/phjr/202608/t20260820_3995853.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://jrs.mof.gov.cn/zhengcefabu/phjr/202608/t20260820_3995853.htm"
+    },
+    {
+      "error": "请求失败: 住房城乡建设部: HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/index.html (Caused by NameResolutionError(\"HTTPSConnection(host='www.mohurd.gov.cn', port=443): Failed to resolve 'www.mohurd.gov.cn' ([Errno -3] Temporary failure in name resolution)\"))",
+      "source": "mohurd",
+      "stage": "discover"
+    },
+    {
+      "error": "DeepSeek 分析失败: 400 Client Error: Bad Request for url: https://api.b.ai/v1/chat/completions",
+      "policy": "1afa677a601bae7cebe3",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 400 Client Error: Bad Request for url: https://api.b.ai/v1/chat/completions",
+      "policy": "2c079ea30d544bdbe8d6",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 400 Client Error: Bad Request for url: https://api.b.ai/v1/chat/completions",
+      "policy": "358b52eb2325b8e13857",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 429 Client Error: Too Many Requests for url: https://api.b.ai/v1/chat/completions",
+      "policy": "a81d79a29b77c9ae8e51",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 429 Client Error: Too Many Requests for url: https://api.b.ai/v1/chat/completions",
+      "policy": "dd452f4ce3f402d559ab",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 429 Client Error: Too Many Requests for url: https://api.b.ai/v1/chat/completions",
+      "policy": "1e6c7c1b1ae43ca35d08",
+      "stage": "analyze"
+    }
+  ],
+  "generated_on": "2026-09-03T22:24:06+08:00",
+  "pruned": 0,
+  "retention_days": 90
+}
