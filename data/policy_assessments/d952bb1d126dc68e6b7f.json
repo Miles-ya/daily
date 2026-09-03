@@ -1,0 +1,41 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "商务部公告2026年第36号 公布对原产于美国、欧盟、台湾地区和日本的进口共聚聚甲醛反倾销措施相关企业税率继承的决定"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "商务部正式发布《商务部公告2026年第36号 公布对原产于美国、欧盟、台湾地区和日本的进口共聚聚甲醛反倾销措施相关企业税率继承的决定》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：商务部公告2026年第36号 公布对原产于美国、欧盟、台湾地区和日本的进口共聚聚甲醛反倾销措施相关企业税率继承的决定"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-09-03T09:39:50+00:00",
+  "content_hash": "1b4a79dbbc260dde7880f369aaeb89b94b3138223b96baf5418bedc8fb36ffab",
+  "importance": "normal",
+  "policy_id": "d952bb1d126dc68e6b7f",
+  "relevant": true,
+  "score": 43,
+  "topics": [
+    "创业机会",
+    "宏观环境"
+  ]
+}
