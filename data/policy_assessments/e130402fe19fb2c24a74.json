@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部等9部门关于进一步激发下沉市场活力 活跃县域消费的意见"
+      "商务部等7部门关于推动商品消费扩容升级的实施意见"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "important",
     "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部等9部门关于进一步激发下沉市场活力 活跃县域消费的意见》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部等7部门关于推动商品消费扩容升级的实施意见》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,21 +24,20 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部等9部门关于进一步激发下沉市场活力 活跃县域消费的意见"
+      "正式发布：商务部等7部门关于推动商品消费扩容升级的实施意见"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-04T09:32:31+00:00",
-  "content_hash": "fe83279a201912ec672ab561475656875b9c6a1151a9aa90d874cd03496d013c",
+  "assessed_at": "2026-09-04T14:15:23+00:00",
+  "content_hash": "5a01cac4e899ab571b120b68af959c7cbf80245a8e30311110780edd17f02b1b",
   "importance": "important",
-  "policy_id": "358b52eb2325b8e13857",
+  "policy_id": "e130402fe19fb2c24a74",
   "relevant": true,
   "score": 73,
   "topics": [
     "产业方向",
     "资金流向",
     "创业机会",
-    "就业与城市",
     "宏观环境"
   ]
 }
