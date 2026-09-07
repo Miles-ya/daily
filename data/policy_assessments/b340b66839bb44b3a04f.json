@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定"
+      "商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,17 +24,18 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第32号 公布对原产于墨西哥和美国的进口碧根果反倾销调查的初步裁定"
+      "正式发布：商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-07T04:24:54+00:00",
-  "content_hash": "7f13f1886e54328c031e65621d2c7a5231733a8e67d925281ddd1d04c5d49c8e",
+  "assessed_at": "2026-09-07T10:09:51+00:00",
+  "content_hash": "d16459571e62b63aed4b8c5ed9f37f66a712898e3ebff25cbd56fe81e47ac5c2",
   "importance": "normal",
-  "policy_id": "dd452f4ce3f402d559ab",
+  "policy_id": "b340b66839bb44b3a04f",
   "relevant": true,
   "score": 43,
   "topics": [
+    "产业方向",
     "创业机会",
     "宏观环境"
   ]
