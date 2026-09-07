@@ -20,7 +20,7 @@ class DeepSeekAnalyzer(AnalyzerProvider):
     def __init__(self, cache_dir: Path, api_key: str | None = None, model: str | None = None,
                  schema_path: Path | None = None, retries: int = 2, system_prompt: str | None = None):
         self.api_key = api_key or os.getenv("DEEPSEEK_API_KEY")
-        self.model = model or os.getenv("DEEPSEEK_MODEL", "deepseek-chat")
+        self.model = model or os.getenv("DEEPSEEK_MODEL", "deepseek-v4-flash")
         self.endpoint = os.getenv("DEEPSEEK_BASE_URL", self.default_endpoint).rstrip("/")
         self.cache_dir = cache_dir
         self.cache_dir.mkdir(parents=True, exist_ok=True)
