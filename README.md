@@ -58,8 +58,8 @@ ENABLE_TELEGRAM=true .venv/bin/daily policy-notify \
 - Secret `TELEGRAM_BOT_TOKEN`：Telegram BotFather 生成的机器人令牌。
 - Secret `TELEGRAM_CHAT_ID`：接收私信的 chat ID。
 - Secret `PERSONAL_PROFILE_JSON`：只参与私人简报生成，不写入仓库、日志或网站。
-- Variable `DEEPSEEK_BASE_URL`：可选，默认 `https://api.b.ai/v1/chat/completions`。
-- Variable `DEEPSEEK_MODEL`：可选，默认 `deepseek-v4-flash`。
+- Variable `DEEPSEEK_BASE_URL`：可选，默认使用 DeepSeek 官方接口 `https://api.deepseek.com/chat/completions`。
+- Variable `DEEPSEEK_MODEL`：可选，默认 `deepseek-chat`。
 
 `PERSONAL_PROFILE_JSON` 示例：
 
