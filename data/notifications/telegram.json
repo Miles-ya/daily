@@ -37,6 +37,11 @@
       "content_hash": "fe83279a201912ec672ab561475656875b9c6a1151a9aa90d874cd03496d013c",
       "policy_id": "72361149acd130257ade"
     },
+    "aa8a26af478078596bcb:8f027c5bd1208988d14b99252069b57335032fdeb9477e7cb79c9d16726a87dc": {
+      "content_hash": "8f027c5bd1208988d14b99252069b57335032fdeb9477e7cb79c9d16726a87dc",
+      "policy_id": "aa8a26af478078596bcb",
+      "status": "signal"
+    },
     "b13bc41860d37fa2fc97:a9204aa214e3c6dfda362be4dc1ff454d6d115b7db250d29fb2f918341acce09": {
       "content_hash": "a9204aa214e3c6dfda362be4dc1ff454d6d115b7db250d29fb2f918341acce09",
       "policy_id": "b13bc41860d37fa2fc97",
