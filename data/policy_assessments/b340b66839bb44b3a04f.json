@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "商务部正式发布《商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-09-20T14:07:57+00:00",
+  "content_hash": "d16459571e62b63aed4b8c5ed9f37f66a712898e3ebff25cbd56fe81e47ac5c2",
+  "importance": "normal",
+  "policy_id": "b340b66839bb44b3a04f",
+  "relevant": true,
+  "score": 43,
+  "topics": [
+    "产业方向",
+    "创业机会",
+    "宏观环境"
+  ]
+}
