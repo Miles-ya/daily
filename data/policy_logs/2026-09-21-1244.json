@@ -1,0 +1,52 @@
+{
+  "cache_pruned": 0,
+  "changed": [
+    "55f03cea76111d0a9be2",
+    "bd54d85c95607a99c830",
+    "1cf80905d783503b3d93",
+    "1afa677a601bae7cebe3",
+    "d952bb1d126dc68e6b7f",
+    "72361149acd130257ade"
+  ],
+  "discovered": 49,
+  "errors": [
+    {
+      "error": "请求失败: 住房城乡建设部: HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/index.html (Caused by NameResolutionError(\"HTTPSConnection(host='www.mohurd.gov.cn', port=443): Failed to resolve 'www.mohurd.gov.cn' ([Errno -3] Temporary failure in name resolution)\"))",
+      "source": "mohurd",
+      "stage": "discover"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "55f03cea76111d0a9be2",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "bd54d85c95607a99c830",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "1cf80905d783503b3d93",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "1afa677a601bae7cebe3",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "d952bb1d126dc68e6b7f",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "72361149acd130257ade",
+      "stage": "analyze"
+    }
+  ],
+  "generated_on": "2026-09-21T12:44:06+08:00",
+  "pruned": 1,
+  "retention_days": 90
+}
