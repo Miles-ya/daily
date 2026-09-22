@@ -28,6 +28,11 @@
       "content_hash": "fe83279a201912ec672ab561475656875b9c6a1151a9aa90d874cd03496d013c",
       "policy_id": "358b52eb2325b8e13857"
     },
+    "3b1b43cd2cd97195308e:1363b840ad38deb5a39a9dea6142e77a442034e0611d0acb48103bb0fec8305c": {
+      "content_hash": "1363b840ad38deb5a39a9dea6142e77a442034e0611d0acb48103bb0fec8305c",
+      "policy_id": "3b1b43cd2cd97195308e",
+      "status": "suppressed"
+    },
     "46794398050fe9d27325:70fccce242b75d56a2e5f9857a525873ece7ca85bd60814269155d066693a29a": {
       "content_hash": "70fccce242b75d56a2e5f9857a525873ece7ca85bd60814269155d066693a29a",
       "policy_id": "46794398050fe9d27325",
