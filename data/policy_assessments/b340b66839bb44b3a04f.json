@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第38号 公布延长对原产于墨西哥和美国的进口碧根果反倾销调查期限决定"
+      "商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第38号 公布延长对原产于墨西哥和美国的进口碧根果反倾销调查期限决定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,17 +24,18 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第38号 公布延长对原产于墨西哥和美国的进口碧根果反倾销调查期限决定"
+      "正式发布：商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-23T09:54:04+00:00",
-  "content_hash": "cfecc80c2b4491c869da602563e3084e063194e4f064760f3d771eb53e7cb7a4",
+  "assessed_at": "2026-09-23T14:55:56+00:00",
+  "content_hash": "d16459571e62b63aed4b8c5ed9f37f66a712898e3ebff25cbd56fe81e47ac5c2",
   "importance": "normal",
-  "policy_id": "55f03cea76111d0a9be2",
+  "policy_id": "b340b66839bb44b3a04f",
   "relevant": true,
   "score": 43,
   "topics": [
+    "产业方向",
     "创业机会",
     "宏观环境"
   ]

@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "[政策原文]"
+      "商务部等8部门关于印发《促进智能家居消费行动方案》的通知"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "important",
     "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《[政策原文]》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部等8部门关于印发《促进智能家居消费行动方案》的通知》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：[政策原文]"
+      "正式发布：商务部等8部门关于印发《促进智能家居消费行动方案》的通知"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-23T09:54:00+00:00",
+  "assessed_at": "2026-09-23T14:55:47+00:00",
   "content_hash": "970f8b4be35eb64a7f77c2d8e0b208f121c248be8ba935b4fd1e49ed276781da",
   "importance": "important",
-  "policy_id": "6ab1b7a3ad54f9d25705",
+  "policy_id": "492275a2b054025a121f",
   "relevant": true,
   "score": 73,
   "topics": [
