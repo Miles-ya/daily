@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部等5部门关于调整《向特定国家（地区）出口易制毒化学品管理目录》的公告"
+      "商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部等5部门关于调整《向特定国家（地区）出口易制毒化学品管理目录》的公告》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,17 +24,18 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部等5部门关于调整《向特定国家（地区）出口易制毒化学品管理目录》的公告"
+      "正式发布：商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-24T14:56:20+00:00",
-  "content_hash": "1363b840ad38deb5a39a9dea6142e77a442034e0611d0acb48103bb0fec8305c",
+  "assessed_at": "2026-09-24T14:56:37+00:00",
+  "content_hash": "9870d8475190bd893d55185bdd398988345ac6d0d909203f6719e43bd939f9ab",
   "importance": "normal",
-  "policy_id": "3b1b43cd2cd97195308e",
+  "policy_id": "bd54d85c95607a99c830",
   "relevant": true,
   "score": 43,
   "topics": [
+    "产业方向",
     "创业机会",
     "宏观环境"
   ]
