@@ -3,7 +3,7 @@
   "canonical_url": "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_49ae5611b9fc46c98abb7dbc306c7ac6.html",
   "content": "首页\n>\n政策发布\n>\n对外贸易管理\n来源：外贸司\n类型：原创\n2026-09-24 20:28\nAI阅读\n关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知\n【发布单位】外贸司\n【发布文号】商贸农函〔2026〕163号\n【发文日期】2026年09月24日\n关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知.pdf\n商务热点\n商务部惠企政策专题\n学习宣传贯彻党的二十大精神\n消费品以旧换新\n国家层面海外综合服务平台\n商务帮扶\n提振消费专项行动 政策集成和综合解读专栏\n优化营商环境-国际贸易专题\n外贸促进\n外资企业问题诉求收集办理\n电子商务公共服务\n国际消费中心城市培育建设\n稳外贸稳外资政策措施\n丝路电商——电子商务国际合作\n《区域全面经济伙伴关系协定》（RCEP）\n中国国际进口博览会\n市场运行与流通发展服务平台\n2025年度网站工作年度报表\n机构子站专题\n中日经济高层对话\n农产品贸易专题\n出口商品技术指南",
   "content_hash": "fac544284042043301ab9b0a02b4eb187a19f7cd1429d8c199ce96286bd4111c",
-  "crawl_time": "2026-09-24T14:56:12+00:00",
+  "crawl_time": "2026-09-25T04:46:04+00:00",
   "document_number": "商贸农函〔2026〕163号",
   "effective_date": null,
   "extraction_complete": true,
@@ -16,7 +16,10 @@
   "publish_time": null,
   "raw_metadata": {
     "content_type": "text/html",
-    "http_status": 200
+    "http_status": 200,
+    "mirror_urls": [
+      "https://www.mofcom.gov.cn/zcfb/dwmygl/art/2026/art_49ae5611b9fc46c98abb7dbc306c7ac6.html"
+    ]
   },
   "source_id": "mofcom",
   "source_name": "商务部",
