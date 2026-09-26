@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部等7部门关于推动商品消费扩容升级的实施意见"
+      "[政策原文]"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "important",
     "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部等7部门关于推动商品消费扩容升级的实施意见》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《[政策原文]》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部等7部门关于推动商品消费扩容升级的实施意见"
+      "正式发布：[政策原文]"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-26T04:48:01+00:00",
-  "content_hash": "5a01cac4e899ab571b120b68af959c7cbf80245a8e30311110780edd17f02b1b",
+  "assessed_at": "2026-09-26T09:50:10+00:00",
+  "content_hash": "970f8b4be35eb64a7f77c2d8e0b208f121c248be8ba935b4fd1e49ed276781da",
   "importance": "important",
-  "policy_id": "e130402fe19fb2c24a74",
+  "policy_id": "6ab1b7a3ad54f9d25705",
   "relevant": true,
   "score": 73,
   "topics": [

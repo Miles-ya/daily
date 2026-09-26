@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部 工业和信息化部 市场监管总局关于印发《汽车行业境外竞争行为与合规建设指引》的通知"
+      "[政策原文]"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部 工业和信息化部 市场监管总局关于印发《汽车行业境外竞争行为与合规建设指引》的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《[政策原文]》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部 工业和信息化部 市场监管总局关于印发《汽车行业境外竞争行为与合规建设指引》的通知"
+      "正式发布：[政策原文]"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-26T04:47:56+00:00",
+  "assessed_at": "2026-09-26T09:50:23+00:00",
   "content_hash": "ed3edafcd51a0fe8690e9ece7ab4b8d876f32c3240528f5719bfa4b415428310",
   "importance": "normal",
-  "policy_id": "2aefd434d2878864a50f",
+  "policy_id": "1cf80905d783503b3d93",
   "relevant": true,
   "score": 58,
   "topics": [
