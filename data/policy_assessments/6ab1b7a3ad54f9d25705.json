@@ -28,17 +28,16 @@
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-30T05:24:49+00:00",
-  "content_hash": "fe83279a201912ec672ab561475656875b9c6a1151a9aa90d874cd03496d013c",
+  "assessed_at": "2026-09-30T05:24:23+00:00",
+  "content_hash": "970f8b4be35eb64a7f77c2d8e0b208f121c248be8ba935b4fd1e49ed276781da",
   "importance": "important",
-  "policy_id": "358b52eb2325b8e13857",
+  "policy_id": "6ab1b7a3ad54f9d25705",
   "relevant": true,
   "score": 73,
   "topics": [
     "产业方向",
     "资金流向",
     "创业机会",
-    "就业与城市",
     "宏观环境"
   ]
 }

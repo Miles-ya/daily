@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
+      "商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,18 +24,17 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第37号 公布对原产于日本的进口二氯二氢硅反倾销调查的初步裁定"
+      "正式发布：商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-09-29T12:41:55+00:00",
-  "content_hash": "d16459571e62b63aed4b8c5ed9f37f66a712898e3ebff25cbd56fe81e47ac5c2",
+  "assessed_at": "2026-09-30T05:23:57+00:00",
+  "content_hash": "9f574c35eb09dd80760658e6e4790001df849c7e3916efbba86628c07db7737f",
   "importance": "normal",
-  "policy_id": "b340b66839bb44b3a04f",
+  "policy_id": "3528f95ca4f1535e5ed5",
   "relevant": true,
   "score": 43,
   "topics": [
-    "产业方向",
     "创业机会",
     "宏观环境"
   ]
