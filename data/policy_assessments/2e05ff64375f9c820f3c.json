@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知"
+      "商务部公告2026年第38号 公布延长对原产于墨西哥和美国的进口碧根果反倾销调查期限决定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第38号 公布延长对原产于墨西哥和美国的进口碧根果反倾销调查期限决定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知"
+      "正式发布：商务部公告2026年第38号 公布延长对原产于墨西哥和美国的进口碧根果反倾销调查期限决定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-01T05:39:46+00:00",
-  "content_hash": "3a633ea5cb2a9b526ed23d706ba7513958df4a1ae7d4a7c0597dcefaa3a927ca",
+  "assessed_at": "2026-10-01T13:02:37+00:00",
+  "content_hash": "15fab81975e06cdba5903dc546b4d6690c367e95239c353f2d02627e4fc2d171",
   "importance": "normal",
-  "policy_id": "d782eed6330b9503a91a",
+  "policy_id": "2e05ff64375f9c820f3c",
   "relevant": true,
   "score": 43,
   "topics": [
