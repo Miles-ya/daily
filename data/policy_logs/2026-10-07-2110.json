@@ -1,0 +1,109 @@
+{
+  "cache_pruned": 0,
+  "changed": [
+    "3e35c560e84c5711fb47",
+    "3b1b43cd2cd97195308e",
+    "492275a2b054025a121f",
+    "2e05ff64375f9c820f3c",
+    "b340b66839bb44b3a04f"
+  ],
+  "discovered": 48,
+  "errors": [
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260929_3998312.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260929_3998312.htm"
+    },
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260911_3997257.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://jrs.mof.gov.cn/zhengcefabu/phjr/202609/t20260911_3997257.htm"
+    },
+    {
+      "error": "请求失败: 财政部: 502 Server Error: Bad Gateway for url: http://jkw.mof.gov.cn/zhengcefabu/202609/t20260901_3996425.htm",
+      "source": "mof",
+      "stage": "collect",
+      "url": "http://jkw.mof.gov.cn/zhengcefabu/202609/t20260901_3996425.htm"
+    },
+    {
+      "error": "请求失败: 住房城乡建设部: HTTPSConnectionPool(host='www.mohurd.gov.cn', port=443): Max retries exceeded with url: /gongkai/zc/wjk/index.html (Caused by NameResolutionError(\"HTTPSConnection(host='www.mohurd.gov.cn', port=443): Failed to resolve 'www.mohurd.gov.cn' ([Errno -3] Temporary failure in name resolution)\"))",
+      "source": "mohurd",
+      "stage": "discover"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "df1fadd4cf0f31b39784",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "3528f95ca4f1535e5ed5",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "dc323a416c1c872bde1b",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "da6db9f953fbbfcf2165",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "3e35c560e84c5711fb47",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "3b1b43cd2cd97195308e",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "b17ed5df4f24b5f73463",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "492275a2b054025a121f",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "2e05ff64375f9c820f3c",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "b340b66839bb44b3a04f",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "1cf80905d783503b3d93",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "e130402fe19fb2c24a74",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "d952bb1d126dc68e6b7f",
+      "stage": "analyze"
+    },
+    {
+      "error": "DeepSeek 分析失败: 401 Client Error: Unauthorized for url: https://api.deepseek.com/chat/completions",
+      "policy": "358b52eb2325b8e13857",
+      "stage": "analyze"
+    }
+  ],
+  "generated_on": "2026-10-07T21:10:53+08:00",
+  "pruned": 0,
+  "retention_days": 90
+}
