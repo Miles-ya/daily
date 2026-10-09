@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知"
+      "商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知"
+      "正式发布：商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-09T05:58:05+00:00",
-  "content_hash": "3a633ea5cb2a9b526ed23d706ba7513958df4a1ae7d4a7c0597dcefaa3a927ca",
+  "assessed_at": "2026-10-09T13:07:00+00:00",
+  "content_hash": "20d1b53134ada50d60735644125acb9697a0c99afde2b7f16c4aa741de1f20a4",
   "importance": "normal",
-  "policy_id": "d782eed6330b9503a91a",
+  "policy_id": "571d6e38f32e8d4d8404",
   "relevant": true,
   "score": 43,
   "topics": [
