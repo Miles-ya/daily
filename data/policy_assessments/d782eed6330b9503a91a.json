@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知"
+      "关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知"
+      "正式发布：关于公示2026年食糖进口关税配额再分配拟分配企业名单的通知"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-08T13:19:10+00:00",
-  "content_hash": "30596b942d7aa35185cdb3644149a14e99690043ad96994e9a3c994aac0513f4",
+  "assessed_at": "2026-10-09T05:58:05+00:00",
+  "content_hash": "3a633ea5cb2a9b526ed23d706ba7513958df4a1ae7d4a7c0597dcefaa3a927ca",
   "importance": "normal",
-  "policy_id": "3528f95ca4f1535e5ed5",
+  "policy_id": "d782eed6330b9503a91a",
   "relevant": true,
   "score": 43,
   "topics": [
