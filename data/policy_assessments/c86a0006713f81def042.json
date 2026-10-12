@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知"
+      "商务部公告2026年第44号 公布对原产于欧盟的进口对硝基甲苯发起反倾销立案调查"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第44号 公布对原产于欧盟的进口对硝基甲苯发起反倾销立案调查》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部办公厅关于做好2027年度汽车和摩托车出口许可申报工作的通知"
+      "正式发布：商务部公告2026年第44号 公布对原产于欧盟的进口对硝基甲苯发起反倾销立案调查"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-11T12:39:10+00:00",
-  "content_hash": "30596b942d7aa35185cdb3644149a14e99690043ad96994e9a3c994aac0513f4",
+  "assessed_at": "2026-10-12T05:45:46+00:00",
+  "content_hash": "6db3d8535176a0284116f09d15423c4553b3e3d6965fceeb641eb97437b34c28",
   "importance": "normal",
-  "policy_id": "3528f95ca4f1535e5ed5",
+  "policy_id": "c86a0006713f81def042",
   "relevant": true,
   "score": 43,
   "topics": [
