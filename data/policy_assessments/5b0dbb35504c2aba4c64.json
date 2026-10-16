@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于进一步完善价格形成机制 推动普惠养老服务提质扩面的指导意见(发改价格〔2026〕1476号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于进一步完善价格形成机制 推动普惠养老服务提质扩面的指导意见(发改价格〔2026〕1476号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于进一步完善价格形成机制 推动普惠养老服务提质扩面的指导意见(发改价格〔2026〕1476号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-10-16T09:40:49+00:00",
+  "content_hash": "741a9b7cb3af14c639b6f210ddb6186eced1eeae0b1da9274c8ff22775c49c83",
+  "importance": "normal",
+  "policy_id": "5b0dbb35504c2aba4c64",
+  "relevant": true,
+  "score": 65,
+  "topics": [
+    "资金流向"
+  ]
+}
