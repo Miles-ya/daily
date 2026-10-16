@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "《城乡义务教育补助经费管理办法》修订印发"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化；出现明确资金或资源配置线索",
+    "macro_signals": [],
+    "one_sentence": "财政部正式发布《《城乡义务教育补助经费管理办法》修订印发》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：《城乡义务教育补助经费管理办法》修订印发"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-10-16T04:20:07+00:00",
+  "content_hash": "06f60fdf6552c1eb04cfa0709a52b6f0d1fe691ebdc6a20c41b5dc67d4f55515",
+  "importance": "normal",
+  "policy_id": "2c4907a78ddf2a14d4be",
+  "relevant": true,
+  "score": 65,
+  "topics": [
+    "资金流向"
+  ]
+}
