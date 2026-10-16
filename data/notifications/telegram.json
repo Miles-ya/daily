@@ -15,6 +15,11 @@
       "policy_id": "2aefd434d2878864a50f",
       "status": "suppressed"
     },
+    "2c4907a78ddf2a14d4be:06f60fdf6552c1eb04cfa0709a52b6f0d1fe691ebdc6a20c41b5dc67d4f55515": {
+      "content_hash": "06f60fdf6552c1eb04cfa0709a52b6f0d1fe691ebdc6a20c41b5dc67d4f55515",
+      "policy_id": "2c4907a78ddf2a14d4be",
+      "status": "suppressed"
+    },
     "2e05ff64375f9c820f3c:15fab81975e06cdba5903dc546b4d6690c367e95239c353f2d02627e4fc2d171": {
       "content_hash": "15fab81975e06cdba5903dc546b4d6690c367e95239c353f2d02627e4fc2d171",
       "policy_id": "2e05ff64375f9c820f3c",
