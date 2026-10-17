@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第44号 公布对原产于欧盟的进口对硝基甲苯发起反倾销立案调查"
+      "商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第44号 公布对原产于欧盟的进口对硝基甲苯发起反倾销立案调查》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第44号 公布对原产于欧盟的进口对硝基甲苯发起反倾销立案调查"
+      "正式发布：商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-17T09:13:06+00:00",
-  "content_hash": "6db3d8535176a0284116f09d15423c4553b3e3d6965fceeb641eb97437b34c28",
+  "assessed_at": "2026-10-17T13:38:57+00:00",
+  "content_hash": "f5eeee2b8dd9a554d6c245bfd577863e8aff58cd5810cdecfa9bc3419d1ab617",
   "importance": "normal",
-  "policy_id": "c86a0006713f81def042",
+  "policy_id": "355531a25cdd446bf605",
   "relevant": true,
   "score": 43,
   "topics": [
