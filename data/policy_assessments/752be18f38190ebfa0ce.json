@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部等9部门关于加快推进科技兴商的意见"
+      "关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -14,9 +14,9 @@
       ]
     },
     "importance": "normal",
-    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部等9部门关于加快推进科技兴商的意见》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,18 +24,17 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部等9部门关于加快推进科技兴商的意见"
+      "正式发布：关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-20T09:58:32+00:00",
-  "content_hash": "fa23f594d0be7de385416df27075a2f30c1a66fb418ca624ca1fefb97f088018",
+  "assessed_at": "2026-10-20T14:58:08+00:00",
+  "content_hash": "6b11a8724140f0d8d711d13105ddc1666a8a39f966d53d7e40e9a0e15e093716",
   "importance": "normal",
-  "policy_id": "02771d1ec66898ccadb9",
+  "policy_id": "752be18f38190ebfa0ce",
   "relevant": true,
-  "score": 58,
+  "score": 43,
   "topics": [
-    "产业方向",
     "创业机会",
     "宏观环境"
   ]

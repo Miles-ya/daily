@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则"
+      "商务部等9部门关于加快推进科技兴商的意见"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -14,9 +14,9 @@
       ]
     },
     "importance": "normal",
-    "importance_reason": "同时影响多个关注领域",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部等9部门关于加快推进科技兴商的意见》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,17 +24,18 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则"
+      "正式发布：商务部等9部门关于加快推进科技兴商的意见"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-20T09:59:17+00:00",
-  "content_hash": "20d1b53134ada50d60735644125acb9697a0c99afde2b7f16c4aa741de1f20a4",
+  "assessed_at": "2026-10-20T14:58:12+00:00",
+  "content_hash": "4531a1a360771c45de2db923e40146a560c0b1275f62474acd3d1c72df4243e1",
   "importance": "normal",
-  "policy_id": "571d6e38f32e8d4d8404",
+  "policy_id": "34b7f4f883ba2b19e17f",
   "relevant": true,
-  "score": 43,
+  "score": 58,
   "topics": [
+    "产业方向",
     "创业机会",
     "宏观环境"
   ]
