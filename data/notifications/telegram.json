@@ -107,6 +107,11 @@
       "content_hash": "fe83279a201912ec672ab561475656875b9c6a1151a9aa90d874cd03496d013c",
       "policy_id": "72361149acd130257ade"
     },
+    "752be18f38190ebfa0ce:6b11a8724140f0d8d711d13105ddc1666a8a39f966d53d7e40e9a0e15e093716": {
+      "content_hash": "6b11a8724140f0d8d711d13105ddc1666a8a39f966d53d7e40e9a0e15e093716",
+      "policy_id": "752be18f38190ebfa0ce",
+      "status": "suppressed"
+    },
     "7eb05fefb9dcbf7a02bb:eaa372200c92dcac687a7d6dc31c7c0196bf577816100d2a30ee4fc42f522910": {
       "content_hash": "eaa372200c92dcac687a7d6dc31c7c0196bf577816100d2a30ee4fc42f522910",
       "policy_id": "7eb05fefb9dcbf7a02bb",
