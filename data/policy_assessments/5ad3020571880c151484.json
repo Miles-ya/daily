@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则"
+      "商务部 海关总署公告2026年第52号 公布进一步优化两用物项出口管制质疑和鉴别工作有关事项"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部 海关总署公告2026年第52号 公布进一步优化两用物项出口管制质疑和鉴别工作有关事项》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第46号 2027年食糖、羊毛、毛条进口关税配额实施细则"
+      "正式发布：商务部 海关总署公告2026年第52号 公布进一步优化两用物项出口管制质疑和鉴别工作有关事项"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-20T04:39:40+00:00",
-  "content_hash": "f5eeee2b8dd9a554d6c245bfd577863e8aff58cd5810cdecfa9bc3419d1ab617",
+  "assessed_at": "2026-10-20T09:58:46+00:00",
+  "content_hash": "9698e19dd8bb0eeb04906e60f6c722c79c34f36f2c295c4d21e4ee77ad736dfa",
   "importance": "normal",
-  "policy_id": "355531a25cdd446bf605",
+  "policy_id": "5ad3020571880c151484",
   "relevant": true,
   "score": 43,
   "topics": [
