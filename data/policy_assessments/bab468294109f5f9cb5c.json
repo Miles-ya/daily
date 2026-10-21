@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部等9部门关于加快推进科技兴商的意见"
+      "商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部等9部门关于加快推进科技兴商的意见》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,18 +24,17 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部等9部门关于加快推进科技兴商的意见"
+      "正式发布：商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-21T04:32:16+00:00",
-  "content_hash": "fa23f594d0be7de385416df27075a2f30c1a66fb418ca624ca1fefb97f088018",
+  "assessed_at": "2026-10-21T10:02:28+00:00",
+  "content_hash": "83ffa0f12f9f029a2f2e732ce29c5faf0bbcc93f97f83dee2bf51df796752f5a",
   "importance": "normal",
-  "policy_id": "02771d1ec66898ccadb9",
+  "policy_id": "bab468294109f5f9cb5c",
   "relevant": true,
   "score": 58,
   "topics": [
-    "产业方向",
     "创业机会",
     "宏观环境"
   ]
