@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定"
+      "中共中央办公厅 国务院办公厅关于推动科技创新和产业创新深度融合的意见"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定》，完整影响仍需结合原文判断。",
+    "one_sentence": "科技部正式发布《中共中央办公厅 国务院办公厅关于推动科技创新和产业创新深度融合的意见》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,18 +24,20 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定"
+      "正式发布：中共中央办公厅 国务院办公厅关于推动科技创新和产业创新深度融合的意见"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-21T10:02:28+00:00",
-  "content_hash": "83ffa0f12f9f029a2f2e732ce29c5faf0bbcc93f97f83dee2bf51df796752f5a",
+  "assessed_at": "2026-10-21T15:05:26+00:00",
+  "content_hash": "753755856600e5db2534af06e62bcfc0194c5089135bb4ce87e96024d487e792",
   "importance": "normal",
-  "policy_id": "bab468294109f5f9cb5c",
+  "policy_id": "21feafd8eb2c4be26d17",
   "relevant": true,
   "score": 58,
   "topics": [
+    "产业方向",
+    "资金流向",
     "创业机会",
-    "宏观环境"
+    "就业与城市"
   ]
 }
