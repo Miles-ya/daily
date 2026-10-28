@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部 海关总署公告2026年第50号 公布对盾构机等物项实施出口管制的决定"
+      "商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部 海关总署公告2026年第50号 公布对盾构机等物项实施出口管制的决定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部 海关总署公告2026年第50号 公布对盾构机等物项实施出口管制的决定"
+      "正式发布：商务部 海关总署 中央军委装备发展部公告2026年第49号 公布优化调整无人机相关物项出口管制措施的决定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-27T10:24:19+00:00",
-  "content_hash": "5ccf4355f1093080c34993d39a07f5f58e463fce5a2487c4d0f42d973878606d",
+  "assessed_at": "2026-10-28T05:26:52+00:00",
+  "content_hash": "83ffa0f12f9f029a2f2e732ce29c5faf0bbcc93f97f83dee2bf51df796752f5a",
   "importance": "normal",
-  "policy_id": "44a0ae6ee717a99814b3",
+  "policy_id": "bab468294109f5f9cb5c",
   "relevant": true,
   "score": 58,
   "topics": [
