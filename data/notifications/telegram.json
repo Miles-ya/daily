@@ -117,6 +117,11 @@
       "policy_id": "752be18f38190ebfa0ce",
       "status": "suppressed"
     },
+    "7bb052faa5c903120902:3bf9fcdfe13f3e36f66c9b50a73b50a21e28b385bdba391c21b17ad3ef4cc333": {
+      "content_hash": "3bf9fcdfe13f3e36f66c9b50a73b50a21e28b385bdba391c21b17ad3ef4cc333",
+      "policy_id": "7bb052faa5c903120902",
+      "status": "suppressed"
+    },
     "7eb05fefb9dcbf7a02bb:eaa372200c92dcac687a7d6dc31c7c0196bf577816100d2a30ee4fc42f522910": {
       "content_hash": "eaa372200c92dcac687a7d6dc31c7c0196bf577816100d2a30ee4fc42f522910",
       "policy_id": "7eb05fefb9dcbf7a02bb",
