@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部 海关总署公告2026年第51号 公布优化调整挖泥船相关物项出口管制措施的决定"
+      "商务部公告2026年第53号  公布2027年货物出口配额总量"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部 海关总署公告2026年第51号 公布优化调整挖泥船相关物项出口管制措施的决定》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第53号  公布2027年货物出口配额总量》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部 海关总署公告2026年第51号 公布优化调整挖泥船相关物项出口管制措施的决定"
+      "正式发布：商务部公告2026年第53号  公布2027年货物出口配额总量"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-30T05:35:23+00:00",
-  "content_hash": "e5aeb8ee2c20f1ca80636c750e96f177dd7e9ddf4a37d8bd5d76acf379728e69",
+  "assessed_at": "2026-10-30T12:42:46+00:00",
+  "content_hash": "820baf459110a664f3387d0676ecfd8f31d374b6e272bb6b3bbf0225b099dd5d",
   "importance": "normal",
-  "policy_id": "24be7ce44c18574405ce",
+  "policy_id": "128b6e84c33d3faffcda",
   "relevant": true,
   "score": 58,
   "topics": [

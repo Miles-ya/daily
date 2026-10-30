@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部 海关总署公告2026年第50号 公布对盾构机等物项实施出口管制的决定"
+      "关于加强消费基础设施建设 促进消费投资良性互动的指导意见(发改就业〔2026〕1508号)"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部 海关总署公告2026年第50号 公布对盾构机等物项实施出口管制的决定》，完整影响仍需结合原文判断。",
+    "one_sentence": "国家发展改革委正式发布《关于加强消费基础设施建设 促进消费投资良性互动的指导意见(发改就业〔2026〕1508号)》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,18 +24,18 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部 海关总署公告2026年第50号 公布对盾构机等物项实施出口管制的决定"
+      "正式发布：关于加强消费基础设施建设 促进消费投资良性互动的指导意见(发改就业〔2026〕1508号)"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-10-30T05:35:10+00:00",
-  "content_hash": "eaa372200c92dcac687a7d6dc31c7c0196bf577816100d2a30ee4fc42f522910",
+  "assessed_at": "2026-10-30T12:42:42+00:00",
+  "content_hash": "7a85b92c8fca34065a7f17386df2215418d02ba615a20276cec642b9d368e22c",
   "importance": "normal",
-  "policy_id": "7eb05fefb9dcbf7a02bb",
+  "policy_id": "7f7d9266369bdf538d81",
   "relevant": true,
   "score": 58,
   "topics": [
-    "创业机会",
+    "就业与城市",
     "宏观环境"
   ]
 }
