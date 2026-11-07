@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知"
+      "商务部 海关总署公告2026年第52号 公布进一步优化两用物项出口管制质疑和鉴别工作有关事项"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部 海关总署公告2026年第52号 公布进一步优化两用物项出口管制质疑和鉴别工作有关事项》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知"
+      "正式发布：商务部 海关总署公告2026年第52号 公布进一步优化两用物项出口管制质疑和鉴别工作有关事项"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-11-07T05:48:45+00:00",
-  "content_hash": "6b11a8724140f0d8d711d13105ddc1666a8a39f966d53d7e40e9a0e15e093716",
+  "assessed_at": "2026-11-07T12:53:34+00:00",
+  "content_hash": "9698e19dd8bb0eeb04906e60f6c722c79c34f36f2c295c4d21e4ee77ad736dfa",
   "importance": "normal",
-  "policy_id": "752be18f38190ebfa0ce",
+  "policy_id": "5ad3020571880c151484",
   "relevant": true,
   "score": 43,
   "topics": [
