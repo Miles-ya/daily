@@ -1,0 +1,43 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2026-11-10"
+    ],
+    "evidence": [
+      "中华人民共和国商务部令二〇二六年第4号 关于继续暂停对韩华海洋株式会社5家美国相关子公司实施反制措施2个月的决定"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "同时影响多个关注领域",
+    "macro_signals": [],
+    "one_sentence": "商务部正式发布《中华人民共和国商务部令二〇二六年第4号 关于继续暂停对韩华海洋株式会社5家美国相关子公司实施反制措施2个月的决定》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：中华人民共和国商务部令二〇二六年第4号 关于继续暂停对韩华海洋株式会社5家美国相关子公司实施反制措施2个月的决定"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-11-09T16:00:55+00:00",
+  "content_hash": "6deb785ada1b837651ed9218c63a57fa8f088b7547c84c0cd0dad6cecec533ce",
+  "importance": "normal",
+  "policy_id": "9d7b6a209c8bf56ff9d8",
+  "relevant": true,
+  "score": 43,
+  "topics": [
+    "创业机会",
+    "宏观环境"
+  ]
+}
