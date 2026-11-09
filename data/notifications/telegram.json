@@ -236,6 +236,11 @@
       "content_hash": "537211a5139d3ed47f32b7fe78ec0f54aadced072e8c27994a9960615cd24916",
       "policy_id": "e61ac7c717f72e619f13",
       "status": "suppressed"
+    },
+    "fed156cfb4c5b00b5f23:d727e8ce83b91b42607b602e6c16e983b5e21f3419945298d8fd1904c2908a9d": {
+      "content_hash": "d727e8ce83b91b42607b602e6c16e983b5e21f3419945298d8fd1904c2908a9d",
+      "policy_id": "fed156cfb4c5b00b5f23",
+      "status": "suppressed"
     }
   }
 }
