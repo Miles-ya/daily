@@ -3,7 +3,7 @@
   "canonical_url": "http://gss.mof.gov.cn/gzdt/zhengcefabu/202611/t20261109_4004260.htm",
   "content": "税委会公告2026年第6号\n为落实中美两国元首华盛顿会晤达成的成果共识，根据《中华人民共和国关税法》、《中华人民共和国海关法》、《中华人民共和国对外贸易法》等法律法规和国际法基本原则，经国务院批准，自2026年11月10日13时01分起，调整《国务院关税税则委员会关于对原产于美国的进口商品加征关税的公告》（税委会公告2025年第4号）规定的加征关税措施，在2个月内继续暂停实施24%的对美加征关税税率，保留10%的对美加征关税税率。\n国务院关税税则委员会\n2026年11月9日",
   "content_hash": "d727e8ce83b91b42607b602e6c16e983b5e21f3419945298d8fd1904c2908a9d",
-  "crawl_time": "2026-11-10T07:03:53+00:00",
+  "crawl_time": "2026-11-10T15:31:46+00:00",
   "document_number": "",
   "effective_date": null,
   "extraction_complete": true,
@@ -18,6 +18,7 @@
     "content_type": "text/html",
     "http_status": 200,
     "mirror_urls": [
+      "http://gss.mof.gov.cn/gzdt/zhengcefabu/202611/t20261109_4004260.htm",
       "http://gss.mof.gov.cn/gzdt/zhengcefabu/202611/t20261109_4004260.htm"
     ]
   },
