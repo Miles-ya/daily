@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知"
+      "财政部印发《会计改革与发展“十五五”规划》"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -14,9 +14,9 @@
       ]
     },
     "importance": "normal",
-    "importance_reason": "同时影响多个关注领域",
+    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "财政部正式发布《财政部印发《会计改革与发展“十五五”规划》》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,18 +24,21 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知"
+      "正式发布：财政部印发《会计改革与发展“十五五”规划》"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-11-11T05:58:33+00:00",
-  "content_hash": "6b11a8724140f0d8d711d13105ddc1666a8a39f966d53d7e40e9a0e15e093716",
+  "assessed_at": "2026-11-11T14:03:09+00:00",
+  "content_hash": "060bd9376de725b4f697db39ffb338db9bd85b1d0c41f1b9f835c8e0fe7467ac",
   "importance": "normal",
-  "policy_id": "752be18f38190ebfa0ce",
+  "policy_id": "ac8699a08ea223c1578f",
   "relevant": true,
-  "score": 43,
+  "score": 58,
   "topics": [
+    "产业方向",
+    "资金流向",
     "创业机会",
+    "就业与城市",
     "宏观环境"
   ]
 }
