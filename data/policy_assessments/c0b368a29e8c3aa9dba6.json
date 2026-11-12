@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知"
+      "商务部公告2026年第57号 公布对原产于欧盟的进口对位芳纶长丝发起反倾销立案调查"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第57号 公布对原产于欧盟的进口对位芳纶长丝发起反倾销立案调查》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：关于公示2026年羊毛、毛条进口关税配额再分配拟分配企业名单的通知"
+      "正式发布：商务部公告2026年第57号 公布对原产于欧盟的进口对位芳纶长丝发起反倾销立案调查"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-11-11T14:04:04+00:00",
-  "content_hash": "5a31e51444a6584b18229c797a965a9bb9eaf7ac331f14ef8c969f3289025014",
+  "assessed_at": "2026-11-12T07:00:59+00:00",
+  "content_hash": "da6b51ee4e00ca026dbf4f537f55c361bb0741b75177812b1edae64621a75e23",
   "importance": "normal",
-  "policy_id": "a2cc3b821b2ad7d52371",
+  "policy_id": "c0b368a29e8c3aa9dba6",
   "relevant": true,
   "score": 43,
   "topics": [
