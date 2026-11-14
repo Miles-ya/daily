@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部公告2026年第57号 公布对原产于欧盟的进口对位芳纶长丝发起反倾销立案调查"
+      "商务部公告2026年第56号 公布对原产于欧盟、日本的进口乙叉降冰片烯发起反倾销立案调查"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部公告2026年第57号 公布对原产于欧盟的进口对位芳纶长丝发起反倾销立案调查》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《商务部公告2026年第56号 公布对原产于欧盟、日本的进口乙叉降冰片烯发起反倾销立案调查》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部公告2026年第57号 公布对原产于欧盟的进口对位芳纶长丝发起反倾销立案调查"
+      "正式发布：商务部公告2026年第56号 公布对原产于欧盟、日本的进口乙叉降冰片烯发起反倾销立案调查"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-11-13T15:18:56+00:00",
-  "content_hash": "f1eef00731fa47a656259030d4d370ddc8b2032e352541816623dd307fb9038f",
+  "assessed_at": "2026-11-14T06:07:07+00:00",
+  "content_hash": "2e3a8f9070d9955a1b350085e4eee045469169daa54e53cbb49a6e16a9b109d9",
   "importance": "normal",
-  "policy_id": "c300b15fab27fbb0336c",
+  "policy_id": "20bbcb0285a2d1b66852",
   "relevant": true,
   "score": 43,
   "topics": [
