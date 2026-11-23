@@ -78,6 +78,11 @@
       "policy_id": "3e35c560e84c5711fb47",
       "status": "suppressed"
     },
+    "3eda513f8860158f19d3:341e652cdce0888dc988d7b413fac267b4e4a7a332bf86ca0c8bdc2b95c866b3": {
+      "content_hash": "341e652cdce0888dc988d7b413fac267b4e4a7a332bf86ca0c8bdc2b95c866b3",
+      "policy_id": "3eda513f8860158f19d3",
+      "status": "suppressed"
+    },
     "3eda513f8860158f19d3:861d369e294e6a3fbeb3a2602f0dd532edd6e2534cb387866e721a131d70ae7e": {
       "content_hash": "861d369e294e6a3fbeb3a2602f0dd532edd6e2534cb387866e721a131d70ae7e",
       "policy_id": "3eda513f8860158f19d3",
