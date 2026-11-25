@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部等9部门关于深入推进再生资源回收体系建设  促进回收行业高质量发展的意见"
+      "[政策原文]"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -16,7 +16,7 @@
     "importance": "normal",
     "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部等9部门关于深入推进再生资源回收体系建设  促进回收行业高质量发展的意见》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《[政策原文]》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,14 +24,14 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部等9部门关于深入推进再生资源回收体系建设  促进回收行业高质量发展的意见"
+      "正式发布：[政策原文]"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-11-25T08:15:59+00:00",
-  "content_hash": "f1556c0d68e81a7f050c48c91ace50a8a13dbbb120bd31075fdea2413bbd7556",
+  "assessed_at": "2026-11-25T19:08:58+00:00",
+  "content_hash": "aa366b494bd1dfd68a668ae6d576a8880cacaf4c5a0e3fdfb0888deb02cba0b7",
   "importance": "normal",
-  "policy_id": "cbbf64d20992f14ebc9a",
+  "policy_id": "6c4fcb185dd3e1ae81e4",
   "relevant": true,
   "score": 58,
   "topics": [
