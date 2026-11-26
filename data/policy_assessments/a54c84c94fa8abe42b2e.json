@@ -28,10 +28,10 @@
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-11-25T19:08:50+00:00",
-  "content_hash": "39f5f9bb37791dc1b411d5cb11d8529df4fbeb072a50e840ebe01db0bd40ce17",
+  "assessed_at": "2026-11-26T08:02:57+00:00",
+  "content_hash": "5c550b6711e249c6c606cfa97af783c72021c8526a4ca6c11cb761b75ef340ef",
   "importance": "normal",
-  "policy_id": "96d5c6b786de800c0f77",
+  "policy_id": "a54c84c94fa8abe42b2e",
   "relevant": true,
   "score": 43,
   "topics": [
