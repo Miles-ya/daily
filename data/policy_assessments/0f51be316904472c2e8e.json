@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2026-12-01"
+    ],
+    "evidence": [
+      "关于发布对外投资管理办法配套格式文本(2026年版)的通知(发改外资〔2026〕1670号)"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "国家发展改革委正式发布《关于发布对外投资管理办法配套格式文本(2026年版)的通知(发改外资〔2026〕1670号)》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：关于发布对外投资管理办法配套格式文本(2026年版)的通知(发改外资〔2026〕1670号)"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-11-26T18:22:25+00:00",
+  "content_hash": "906933db26446b671510170db7e0d9bd8b42c0cc3d1de32fc5d70a6958bb9228",
+  "importance": "normal",
+  "policy_id": "0f51be316904472c2e8e",
+  "relevant": true,
+  "score": 50,
+  "topics": [
+    "宏观环境"
+  ]
+}
