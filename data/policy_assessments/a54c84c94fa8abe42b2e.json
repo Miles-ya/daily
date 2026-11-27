@@ -5,7 +5,7 @@
     "confidence": 0.35,
     "deadlines": [],
     "evidence": [
-      "商务部等8部门关于印发《服务贸易发展“十五五”规划》的通知"
+      "公布继续调整实施商务部公告2024年第46号的决定"
     ],
     "funds_flow": {
       "confirmed": [],
@@ -14,9 +14,9 @@
       ]
     },
     "importance": "normal",
-    "importance_reason": "包含重要政策工具或制度变化；同时影响多个关注领域",
+    "importance_reason": "同时影响多个关注领域",
     "macro_signals": [],
-    "one_sentence": "商务部正式发布《商务部等8部门关于印发《服务贸易发展“十五五”规划》的通知》，完整影响仍需结合原文判断。",
+    "one_sentence": "商务部正式发布《公布继续调整实施商务部公告2024年第46号的决定》，完整影响仍需结合原文判断。",
     "opportunities_1_3y": [],
     "policy_tools": [],
     "risks": [
@@ -24,16 +24,16 @@
     ],
     "student_signals": [],
     "what_changed": [
-      "正式发布：商务部等8部门关于印发《服务贸易发展“十五五”规划》的通知"
+      "正式发布：公布继续调整实施商务部公告2024年第46号的决定"
     ]
   },
   "analysis_status": "pending",
-  "assessed_at": "2026-11-26T18:22:20+00:00",
-  "content_hash": "d3450cd4f7d17925ff993282dde26a87981e9e4c3b798ffaeef4e8d8be68f073",
+  "assessed_at": "2026-11-27T08:07:49+00:00",
+  "content_hash": "5c550b6711e249c6c606cfa97af783c72021c8526a4ca6c11cb761b75ef340ef",
   "importance": "normal",
-  "policy_id": "212dac979163f8adcbb8",
+  "policy_id": "a54c84c94fa8abe42b2e",
   "relevant": true,
-  "score": 58,
+  "score": 43,
   "topics": [
     "创业机会",
     "宏观环境"
