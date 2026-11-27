@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [
+      "2027-03-21"
+    ],
+    "evidence": [
+      "中国人民银行令〔2026〕第5号（人民币存贷款利率管理规定）"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "包含重要政策工具或制度变化",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行正式发布《中国人民银行令〔2026〕第5号（人民币存贷款利率管理规定）》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "正式发布：中国人民银行令〔2026〕第5号（人民币存贷款利率管理规定）"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-11-27T18:08:42+00:00",
+  "content_hash": "5ad3184ea79ac685c6c8126d91e76d0aa998b90339cba856ab7b37560024faae",
+  "importance": "normal",
+  "policy_id": "e3b3d04a594407d1aeba",
+  "relevant": true,
+  "score": 50,
+  "topics": [
+    "宏观环境"
+  ]
+}

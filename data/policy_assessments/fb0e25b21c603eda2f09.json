@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "affected_industries": [],
+    "city_signals": [],
+    "confidence": 0.35,
+    "deadlines": [],
+    "evidence": [
+      "关于《人民币存贷款利率管理规定 （征求意见稿）》公开征求意见的反馈"
+    ],
+    "funds_flow": {
+      "confirmed": [],
+      "unknown": [
+        "未启用 AI 分析，尚未核验具体资金安排。"
+      ]
+    },
+    "importance": "normal",
+    "importance_reason": "目前为征求意见稿",
+    "macro_signals": [],
+    "one_sentence": "中国人民银行征求意见《关于《人民币存贷款利率管理规定 （征求意见稿）》公开征求意见的反馈》，完整影响仍需结合原文判断。",
+    "opportunities_1_3y": [],
+    "policy_tools": [],
+    "risks": [
+      "当前仅完成规则识别，不能替代完整政策解析。"
+    ],
+    "student_signals": [],
+    "what_changed": [
+      "征求意见：关于《人民币存贷款利率管理规定 （征求意见稿）》公开征求意见的反馈"
+    ]
+  },
+  "analysis_status": "pending",
+  "assessed_at": "2026-11-27T18:08:38+00:00",
+  "content_hash": "855d4980a01635ddd4fef20d52f6adede8713ed0632ccdfa89dc791549b1f036",
+  "importance": "normal",
+  "policy_id": "fb0e25b21c603eda2f09",
+  "relevant": true,
+  "score": 27,
+  "topics": [
+    "宏观环境"
+  ]
+}
